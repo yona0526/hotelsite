@@ -1,0 +1,308 @@
+/*============================================================*/
+/*======================= Tablet 1024 px ~ =======================*/
+/*============================================================*/
+@media only screen and (max-width:1024px){
+    
+    .header {
+        padding: 1.8vw 2.4vw
+    }
+    .header #gnb {
+        width:30%;
+        height:100%;
+        background-color:whitesmoke
+    }
+    .header .gnb_top {
+      padding:1.8vw;
+      height:auto;
+    }
+
+    .tour_list {
+        padding:0;
+        padding-left:4.5%;
+    }
+
+    .content {
+        padding:0;
+        min-height: 900px;
+    }
+    .content_txt h2 {
+        font-size:4vw
+    }
+    .content_txt .content_det {
+        font-size:1.75vw;
+        margin-bottom:7%;
+    }
+    .tour_list ul li {
+        margin-bottom:7%
+    }
+    .tour_list ul li .tourList_thumb {
+        height:27vw;
+    }
+    .tour_list ul li #btn_tourView {
+        width:100%;
+        height:4.5vw;
+        font-size:1.05em;
+    }
+    .location {
+        padding:1% 2% 0;
+    }
+    .hotelName {
+        padding: 0 2%;
+    }
+
+    /*index */
+    .mainContent .indexSlide {
+      padding:0
+    }
+    .mainContent .main_Intro {
+      padding:1% 8% 0;
+    }
+    .mainContent .main_Intro li {
+      width:25%;
+      padding:2% 0 3%;
+    }
+    .eventLayer {
+      width:80%;
+      left:7.5%;
+      margin-left:0;
+    }
+    .mobilLink a {
+      width:28%;
+    }
+    .mobilLink a img {
+      padding:5px 0;
+      width:60%
+    }
+    #p_footer #footLinks {
+      padding:1.5vw 3vw;
+    }
+    .footBottom {
+      padding: 3vw;
+      height:100%;
+      overflow:hidden;
+    }
+    .footContent_left {
+      padding:0;
+      width:46%
+    }
+    .footContent_right #footCs span {
+      font-size:2.2vw
+    }
+    .footContent_right #footCs {
+      font-size:1.7vw;
+    }
+     .footContent_left address {
+       font-size:1.5vw;
+     }
+     .footContent_right #footBank {
+       font-size:1.7vw;
+     }
+     .footContent_right .footTitle {
+       font-size:2vw;
+     }
+    .footContent_right {
+      width:27%;
+      padding:0 2vw;
+    }
+    .footContent_right #mel {
+      font-size:1.85vw
+    }
+    /* View page*/
+    .tour_view {
+        min-width: unset;
+        width:100%;
+    }
+    .tour_view .hotelImg {
+        height:75vw;
+    }
+    .tour_Searchbox>div {
+        padding: 0 15px;
+    }
+    .tour_Searchbox>div,
+    .tour_Searchbox button {
+        height:66px;
+        line-height:66px;
+    }
+
+    .rmlist_wrap {
+      padding: 0 6vw
+    }
+    
+    .room_layer {
+      box-sizing: border-box;
+      width:100%;
+      left:0;
+      margin-left:0;
+      padding:45px;
+    }
+
+    /* 객실팝업 */
+    .room_layer .roomSlide {
+      width:100%;
+    }
+    .room_layer .rmLayer_info {
+      float:none;
+      width:100%;
+      margin-top:30px;
+      display:flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+    }
+    .room_layer .rmLayer_info dl dt {
+      margin-right:10px;
+    }
+    .room_layer .rmLayer_info dl {
+      margin-right:10px;
+    }
+    .rmLayer_amens {display:flex;}
+
+    .con_tourView {
+        padding:0 3.5%;
+    }
+    .con_tourView:last-child {
+        margin-bottom:5vw;
+    }
+
+    .con_tourView .tourView_txt {
+      font-size:1em;
+    }
+    .facilList {
+      padding: 0 4vw;
+    }
+    .facilList .owl-carousel .owl-nav button.owl-prev {
+      left: -6%;
+    }
+    .facilList .owl-carousel .owl-nav button.owl-next {
+      right: -6%;
+    }
+    .facilList .owl-carousel .owl-nav button.owl-next,
+    .facilList .owl-carousel .owl-nav button.owl-prev {
+      width: 4.5vw;
+    }
+
+    .con_tourView .tourDirection .mapOverlay {
+        width:22vw;
+        height:20vw;
+        padding:3vw;
+        left:10%;
+        top:10%;
+    }
+    .con_tourView .tourDirection .mapOverlay #mapName {
+        font-size:2.3vw;
+    }
+    .tourDirection .mapOverlay #mapAddr {
+        font-size:1.6vw
+    }
+    .tourDirection .mapOverlay #mapPhone {
+        font-size:1.8vw;
+    }
+
+    /*결제 페이지 */
+    .payContent .pay_dl {
+      font-size:2vw;
+    }
+    .pay_dl dd input {
+      height:4vw;
+    }
+    .termsCons li label {
+      font-size:2vw;
+    }
+    .termsCons .radio_check {
+      top:3px;
+    }
+    .pay_txt #termsCons_txt {
+      font-size:1.5vw;
+    }
+    /*complete*/
+    .complete_wrap {
+      margin:3%;
+    }
+    .completeTxt {
+      width:54%;
+    }
+
+/*foot*/
+
+.footerWrap .f_util ul {padding-bottom:4%;}
+.footerWrap .footCon h2 {margin-bottom:4%;}
+
+#membership .mbship_thumb {overflow:hidden; width:230px; height:180px;}
+#membership .mbship_txt {width:45%; }
+.footContent {
+    padding:3.6vw;    
+}
+.footContent .footTitle {
+    font-size:2.2vw;
+    margin-bottom:1.8vw;
+}
+#p_footer #footLinks a,
+.footContent #mel,
+.footContent #footBank,
+.footContent #footCs {
+    font-size:1.6vw;
+}
+.footContent #footCs span {
+  font-size:2vw
+}
+.footContent #footBank {line-height:3vw;}
+.footContent #mel {
+  margin-top:1.8vw;
+}
+}
+
+
+@media only screen and (max-width:768px) {
+    .tour_Searchbox {
+      margin-top:6vw;
+    }
+    .tour_Searchbox label,
+    .tour_Searchbox #tour_Datepick input,
+    .tour_Searchbox button,
+    .tour_Searchbox #tour_Coupon select {
+        font-size:1.12em;
+    }
+    .tour_list ul li #btn_tourView {
+        height:5vw;
+    }
+    .roomList .roomList_Info {
+      padding:2.3vw;
+    }
+    .roomList .roomList_Name {
+      font-size:1.27em;
+    }
+    .roomList_Info dl dt,
+    .roomList_Info dl dd {
+      font-size:1em;
+    }
+    .roomList .roomList_Price {
+      font-size:1.3em;
+    }
+    
+    .facilList .facilList_name {
+        padding:1.5vw;
+    }
+    .sightList li {
+      width:31%;
+      margin-bottom:4%;
+      height:16vw;
+    }
+      /* index */
+    .mainContent .main_Intro {
+        padding:0 10%:
+      }
+    .mainContent .main_Intro li {
+      width:25%;
+    }
+    .mainContent .main_Intro {padding:0}
+    .mainContent .main_Intro .mIntro_txt {
+      font-size:1.6vw
+    }
+    .mainContent .main_Intro li img {
+      width:15.5vw;
+    }
+    .content {
+      min-height:642px;
+    }
+  }
+
+

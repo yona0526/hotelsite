@@ -1,0 +1,357 @@
+/*===============================================================*/
+/*======================= Mobile 520 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:520px){
+   .header {
+      height:auto;
+      padding:3vw 5vw;
+   }
+   .content_txt {
+      clear:both;
+      padding:3vw;
+   }
+   .header #gnb {
+      width:100%;
+      top:0;
+      left:-100%;
+      
+   }
+   .header .gnb_top {
+      padding:3vw;
+   }
+   .header #gnb .menu {
+      height:auto
+   }
+   #gnb .subMenu {
+      height:100%;
+      width:100%;
+      position:unset;
+      margin-top:0;
+   }
+   .header #lnb {
+      display:block;
+      position:absolute;
+      top:4.5vw;
+      right:3vw;
+      
+   }
+   .header #lnb li {
+      margin-right:2vw
+   }
+   .header #lnb #lnb-logout {
+      display:none;
+   }
+   .header #lnb a span {
+      display:none;
+   }
+   .header #lnb a .material-icons {
+      font-size: 24px;
+      padding:3px;
+   }
+   .header #gnb #lnb_mob {
+      display:none;
+      border-bottom:1px solid #eee;
+   }
+   .header #gnb #lnb_mob a {
+      color:#333
+   }
+
+/*index */
+  .mainContent h2 {
+    font-size:5vw;
+    padding:15vw 0 5vw;
+  }
+.mainContent .main_Intro li {
+   width:33%;
+}
+.mainContent .main_Intro li .mIntro_title {
+   font-size:5vw
+}
+.mainContent .main_Intro li img {
+   width:21vw;
+   padding:1.5vw 0;
+}
+.mainContent .main_Intro .mIntro_txt {
+   line-height:2em;
+}
+.mainContent .indexSlide li img {
+   height:130vw;
+   object-fit: cover
+}
+.slide_mob {
+   display: block;
+}
+.slide_web {
+   display: none;
+}
+.eventLayer {
+   width: 74%;
+   left:5%;
+}
+
+.mobilLink a {width:30%;}
+.mobilLink a:nth-child(2) {
+   margin:0 1%;
+}
+.location {
+   font-size:12px;
+}
+
+   .tour_list {
+      padding-left:0;
+   }
+   .tour_list ul {
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content: center;
+   }
+   .tour_list ul li .tourName {
+      font-size:4.5vw;
+   }
+   .tour_list ul li .tourAddr {
+     font-size: 3.1vw;
+     height:15vw;
+   }
+   .tour_list ul li #btn_tourView {
+      height:8.5vw;
+   }
+
+   .con_tourView h4 {
+      font-size:6vw;
+   }
+   .tour_view .hotelImg {
+      height:100vw;
+   }
+   .bx-controls .bx-next,
+   .bx-controls .bx-prev {
+      width:4vw
+   }
+   .tour_Searchbox {
+      display:block;
+      width:94%;
+      margin:5vw auto;
+   }
+
+   .tour_Searchbox>div,
+   .tour_Searchbox button {
+      height:15vw;
+      line-height:15vw;
+   }
+   .tour_Searchbox #tour_Datepick_web {
+      display:none;
+   }
+   .tour_Searchbox #tour_Datepick_mob {
+      display:block;
+      width:100%;
+      margin-bottom:5px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+   }
+
+   .tour_Searchbox #tour_Datepick_mob input {
+      line-height: 2.5em;
+      cursor: pointer;
+      border: none;
+      width: 32%;
+      text-align: center;
+      vertical-align: baseline;
+      color: #333;
+      font-size: 1.25em;
+   }
+   .footContent_left {
+      width:100%;
+   }
+   .footContent_left .footLogo {
+      width:16vw;
+   }
+   .footContent_right {
+      width:50%;
+      margin-top:5%;
+      text-align:left;
+   }
+
+
+   .tour_Searchbox #tour_Datepick_mob input::-webkit-input-placeholder {
+      color: #333;
+   }
+
+   .tour_Searchbox #tour_Datepick_mob input::-ms-input-placeholder {
+      color: #333;
+   }
+
+   .tour_Searchbox #tour_Datepick_mob input::-moz-input-placeholder {
+      color: #333;
+   }
+
+
+   .tour_Searchbox #tour_Coupon {
+      width:78%;
+   }
+   .tour_Searchbox #btn_roomSrch {
+      width:20%
+   }
+   
+   #ui-datepicker-div {
+      width:95%;
+      left:1% !important;
+   }
+   
+   .rmlist_wrap .swiper-button-prev,
+   .rmlist_wrap .swiper-button-next {
+      width:4vw;
+      height:7vw;
+      background-size:cover;
+   }
+   .roomList .roomList_thumb {
+      height:37vw;
+   }
+   .room_layer {
+      top:300px;
+      padding:45px 0 0
+   }
+   .room_layer .roomSlide {
+      height:100vw;
+      margin-bottom:6vw;
+   }
+   .room_layer .roomSlide .flex-direction-nav a {
+      margin-top:-30vw;
+   }
+    .room_layer .rmLayer_title,
+    .room_layer .rmLayer_info, 
+    .room_layer .rmLayer_downinfo {
+       box-sizing:border-box;
+       padding:5vw;
+       margin-top:0
+    }
+    .room_layer .rmLayer_info {
+       flex-direction: column
+    }
+    
+    .room_layer .rmLayer_downinfo .rmLayer_amens {
+       flex-direction: column
+    }
+    .room_layer .rmLayer_downinfo .rmLayer_amens dt {
+       margin-bottom:6vw;
+       margin-right:3%;
+    }
+    .room_layer #rmLayer_price_web {
+      display: none;
+    }
+   .room_layer #rmLayer_price_mob {
+      display: block;
+   }
+   .room_layer #rmLayer_price_mob table {
+      border-top:1px solid #6b6b6b;
+      border-bottom:1px solid #6b6b6b;
+      width:100%;
+      border-collapse: collapse
+   }
+   .room_layer #rmLayer_price_mob th,
+   .room_layer #rmLayer_price_mob td {
+      padding:2vw 0;
+   }
+   .room_layer #rmLayer_price_mob td {
+      text-align:right;
+   }
+   .facilList .facilList_name {
+      font-size:1em;
+   }
+   .facilList .facilList_thumb {
+      height:24vw;
+   }
+   .con_tourView .tourDirection #map {
+      height: 300px;
+   }
+   .con_tourView .tourDirection .mapOverlay {
+      width:50%;
+      height:35%;
+   }
+   .sightList li {
+      width:47%;
+      margin-bottom:6%;
+      height:22vw;
+   }
+   .payContent .pay_dl {
+      padding: 6%;
+      font-size:3.7vw;
+   }
+   .payContent .pay_dl dt {
+      text-align:left;
+   }
+   .pay_dl dt, .pay_dl dd {
+      width:100%;
+   }
+   .pay_dl dd input {
+      height:8vw
+   }
+   .termsCons {
+      margin:1.2% 2% 2%;
+   }
+   .termsCons li {
+      margin-right:-4px;
+      width:50%;
+      border:1px solid #ddd;
+      padding:2%;
+      box-sizing: border-box;
+   }
+   .termsCons .radio_check {
+      top:7px;
+   }
+   .termsCons li label {
+      font-size:3.3vw;
+      width:79%;
+      display:inline-block;
+   }
+   /*
+   .termsCons .radio_check {
+      width:100%;
+      height:15px;
+      border-radius:0;
+      left:0;
+      top:0;
+   } */
+   /*complete*/
+   .complete_wrap {
+      padding:3% 11%;
+   }
+   .check_svg svg {
+      width:100px;
+   }
+   .completeTxt {
+      width:100%
+   }
+   .completeDetail {
+      width:100%;
+      text-align: left;
+      margin-top:20px;
+   }
+   .completeDetail dt {
+      width:100%;
+      
+   }
+   .completeDetail dd {
+      width:100%;
+      padding-left:15px;
+   }
+}
+
+/*===============================================================*/
+/*======================= Mobile 480 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:480px){
+   
+}
+
+
+/*===============================================================*/
+/*======================= Mobile 360 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:360px){
+
+
+}
+@media only screen and (min-height:693px and max-width:540px ){
+
+}
