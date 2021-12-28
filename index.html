@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>즐기고 premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/newTour.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/basic_p.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_tablet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_mobile.css" />
+<!--   <script src="main.js"></script>-->
+    <link rel="stylesheet" href="common/css/jquery.bxslider2.css">
+    <script type="text/javascript" src="common/js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="common/js/p_common.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <Script>
+
+
+    $(function () {
+        
+
+    $(document).ready(function () {
+        $('.indexSlide >ul').bxSlider({
+            mode:'fade',
+            pager:true,
+            controls:true
+        });
+    });
+ 
+
+    $(document).ready(function () {
+        $('.mainEvent').bxSlider({
+            mode:'fade',
+            controls:false,
+            slideWidth: 370,
+            minSlides: 1,
+            maxSlides: 3,
+            moveSlides: 1,
+            slideMargin: 60,
+            pager: true,
+            mode: 'horizontal'
+          //  slideWidth : 370
+        });
+    });
+
+        $('.eventLayer').hide();
+        $('.mainEvent li').click(function(){
+            $('.eventLayer').fadeIn(250);
+        });
+        $('#btn_close').click(function(){
+            $(this).parent('.eventLayer').fadeOut(250);
+        });
+
+    });
+
+
+    </Script>
+</head>
+<body>
+  <div class="header">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>
+      <a href="index.html"><img src="img/logo.png" alt="즐기고 vip로고"></a>
+    </h1>
+    <div id="lnb">
+      <ul>
+          <li><a href="#">
+            <span>마이페이지</span><i class="material-icons">person</i>
+          </a></li>
+          <li><a href="#">
+            <span>상담문의</span>
+            <i class="material-icons">contact_support</i>
+          </a></li>
+          <!--<li><a href="#">구매현황</a></li>-->
+          <li id="lnb-logout"><a href="#">
+            <span>로그아웃</span>
+            <i class="material-icons">logout</i>
+          </a></li>
+      </ul>
+    </div>
+    <div id="gnb">
+      <div class="gnb_top">
+        <button id="btn-gnb_close">
+          <i class="material-icons">
+          close
+          </i>
+        </button>
+      </div>
+      <div id="lnb_mob">
+        <ul>
+          <li><a href="#">마이페이지
+            
+          </a></li>
+          <li><a href="#">상담문의</a></li>
+          <li><a href="#">구매현황</a></li>
+          <li><a href="#">로그아웃</a></li>
+        </ul>
+      </div>
+      <ul>
+        <li class="menu">
+          <a href="#">숙박</a>
+          <ul class="subMenu">
+            <li><a href="list.html">FAMILY 등급</a></li>
+            <li><a href="#">VIP 등급</a></li>
+            <li><a href="#">SVIP 등급</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">초대</a>
+          <ul class="subMenu">
+            <li><a href="#">초대</a></li>
+            <li><a href="#">레저</a></li>
+            <li><a href="#">서핑</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">골프</a>
+          <ul class="subMenu">
+            <li><a href="#">일반</a></li>
+            <li><a href="#">프리미엄</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">건강</a>
+          <ul class="subMenu">
+            <li><a href="#">유전자검사</a></li>
+            <li><a href="#">건강검진</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">멤버십</a>
+          <ul class="subMenu">
+            <li><a href="#">스파</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">공연</a></li>
+            <li><a href="#">레저</a></li>
+            <li><a href="#">꽃배달</a></li>
+            <li><a href="#">체인펜션</a></li>
+            <li><a href="#">하나투어</a></li>
+            <li><a href="#">토탈웨딩</a></li>
+            <li><a href="#">치과</a></li>
+            <li><a href="#">안과</a></li>
+            <li><a href="#">렌터카</a></li>
+            <li><a href="#">신차구입</a></li>
+            <li><a href="#">자동차보험</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">리빙</a>
+          <ul class="subMenu">
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">제휴서비스</a>
+          <ul class="subMenu">
+            <li><a href="#">제주여행</a></li>
+            <li><a href="#">즐기고몰</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+      <div class="mainContent">
+        <div class="indexSlide slide_web">
+          <ul>
+            <li><img src="img/zzz.jpg" alt=""/></li>
+            <li><img src="img/zzz1.jpg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="indexSlide slide_mob">
+          <ul>
+            <li>
+              <img src="img/main_mob1.jpg" alt="" />
+            </li>
+            <li><img src="img/zzz1.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mainContent">
+        <h2>즐기고 프리미엄 회원님들을 위한 혜택</h2>
+        <ul class="main_Intro">
+         
+            <li>
+              <a href="list.html">
+                  <span class="mIntro_title">여행</span>
+                  <img src="img/indexicon/m_travel.png" alt="여행" />
+                  <span class="mIntro_txt">프리미엄 회원만을 위한 <br>고급 숙박 서비스</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span class="mIntro_title">초대</span>
+                  <img src="img/indexicon/m_invi.png" alt="초대" />
+                  <span class="mIntro_txt">일상 속에서 리프레시를 위한 <br>다양한 문화경험</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span class="mIntro_title">골프</span>
+                  <img src="img/indexicon/m_golf2.png" alt="골프" />
+                  <span class="mIntro_txt">여유와 휴식을 함께 즐기며<br> 자연과 하나가 되는 스포츠</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span class="mIntro_title">헬스케어</span>
+                  <img src="img/indexicon/m_medi2.png" alt="헬스케어" />
+                  <span class="mIntro_txt">건강검진 &유전자검사<br> 설명뭐저쩌구</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span class="mIntro_title">멤버십</span>
+                  <img src="img/indexicon/m_member.png" alt="멤버십" />
+                  <span class="mIntro_txt">즐기고 회원님들만을 위한 <br>다양한 서비스</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span class="mIntro_title">리빙</span>
+                  <img src="img/indexicon/m_living.png" alt="리빙" />
+                  <span class="mIntro_txt">국내 생산 천연 라텍스 제품을 <br>특별가에</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span class="mIntro_title">쇼핑</span>
+                  <img src="img/indexicon/m_shopping.png" alt="쇼핑" />
+                  <span class="mIntro_txt">최고의 제품들을 최저가로 <br>만날 수 있는 기회</span>
+              </a>
+            </li>
+        </ul>
+        
+      </div>
+
+      <div class="mainContent mainEventWrap">
+          <h2>EVENT</h2>
+          <div>
+          <ul  class="mainEvent">
+            <li>
+                <div class="eventThumb">
+                  <img src="img/event/event1.jpg" />
+                </div>
+                <div class="eventTit">이벤트ㅔ목fsdfsdfsd제목이 아주 길어서잘라야 하는경우f가 있찌 않씃비낚</div>
+              <!--  <div class="eventTxt">이벤트 내용들어가미나얼ㄴ<br>;ㅑㅓㅁㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                    ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
+                    ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
+                    ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                    ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                </div>-->
+            </li>
+            <li>
+                <div class="eventThumb">
+                  <img src="img/event/event2.jpg" />
+                </div>
+                <div class="eventTit">이벤트ㅔ목2</div>
+            </li>
+            <li>
+                <div class="eventThumb">
+                  <img src="img/event/event3.jpg" />
+                </div>
+                <div class="eventTit">이벤트ㅔ목3</div>
+            </li>
+            <li>
+              <div class="eventThumb">
+                <img src="img/event/event1.jpg" />
+              </div>
+              <div class="eventTit">이벤트ㅔ목fsdfsdfsd제목이 아주 길어서잘라야 하는경우f가 있찌 않씃비낚</div>
+            <!--  <div class="eventTxt">이벤트 내용들어가미나얼ㄴ<br>;ㅑㅓㅁㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
+                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
+                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+              </div>-->
+          </li>
+          <li>
+              <div class="eventThumb">
+                <img src="img/event/event2.jpg" />
+              </div>
+              <div class="eventTit">이벤트ㅔ목2</div>
+          </li>
+          <li>
+              <div class="eventThumb">
+                <img src="img/event/event3.jpg" />
+              </div>
+              <div class="eventTit">이벤트ㅔ목3</div>
+          </li>
+          </ul>
+          </div>
+          <div class="eventLayer">
+            <a href="#" id="btn_close">&times;</a>
+            <div class="eLayer_tit">이벤트제목ㄴㅇㄹ나ㅓ시ㅏ널</div>
+            <img src="/images/main/josun_not2.jpg" />
+            <div class="eLayer_txt">
+                나랏말싸미 듕귁에 달아 문자와로 서르 사맛디 아니할쎄
+                이런 전차로 어린 백셩이 니르고져 홇베이셔도 마참네 제 뜨들 시러펴디 몯핧 노미하니아
+                나랏말싸미 듕귁에 달아 문자와로 서르 사맛디 
+                아니할쎄 이런 전차로 어린 백셩이 니르고져 홇베이셔도 마참네 제 뜨들 시러펴디 몯핧 노미하니아
+                나랏말싸미 듕귁에 달아 문자와로 서르 사맛디 아니할쎄 이런 전차로 어린 백셩이 니르고져 홇베이셔도 마참네 제 뜨들 시러펴디 몯핧 노미하니아
+            </div>
+          </div>
+      </div>
+
+
+
+      <div class="mainContent">
+          <h2>모바일에서도 즐기고</h2>
+          <div class="mobilLink">
+            <a href="#"><img src="img/googleplay.png" alt="구글플레이"/></a>
+            <a href="#"><img src="img/appstore.png" alt="앱스토어" /></a>
+            <a href="#" ><img src="img/btn_kakao.png" alt="카카오 채널"></a>
+          </div>
+      </div>
+
+    <div id="p_footer">
+      <ul id="footLinks">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li><a href="#">카탈로그</a></li>
+      </ul>
+      <div class="footBottom">
+      <div class="footContent_left">
+          <div class="footLogo">
+            <img src="img/logo.png" alt="즐기고 로고" />
+          </div>
+          <address>플랫폼 사업자 : (주)지마이다스 주소 : 서울시 금천구 가산디지털 1로 171(가산동) SK V1센터 501호 대표 : 김신우<br>
+          통신판매업신고번호 : 제 18-2427호 사업자등록번호 : 119-81-88110 개인정보관리 책임자 : 이요한</address>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">행복고객센터</span>
+        <div id="footCs">
+          <span>1644-9111</span><br>
+          평일 09:00 ~ 18:00<br>
+          주말/공휴일 휴무
+        </div>
+        <span id="mel">webmaster@gmidas.com</span>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">입금계좌번호</span>
+        <div id="footBank">
+            국민은행<br>
+            421701-04-028981<br>
+            예금주 (주)지마이다스
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--//footer -->
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>즐기고 premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/newTour.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/basic_p.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_tablet.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_mobile.css" />
+  <!--  <script src="main.js"></script>-->
+
+  <script type="text/javascript" src="common/js/jquery-3.5.1.js"></script>
+
+  <script type="text/javascript" src="common/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="common/css/swiper.css">
+
+
+  <script type="text/javascript" src="common/js/owl.js"></script>
+  <script type="text/javascript" src="common/js/owl.nav.js"></script>
+  <link rel="stylesheet" href="common/css/owl.css">
+
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- jquery ui-->
+  <link rel="stylesheet" href="common/css/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="common/js/p_common.js"></script>
+  <link rel="stylesheet" href="common/css/flexslider.css" type="text/css">
+  <script src="common/js/jquery.flexslider.js"></script>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript">
+function funLoad(){
+        var Cheight = $(devicePixelRatio).height();
+        $('#container').css({'height':Cheight+'px'});
+    }
+    window.onload = funLoad;
+    window.onresize = funLoad;
+   
+  </script>
+</head>
+<body>
+    <div class="header">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1 onclick="location.href='index.html'"><img src="img/logo.png" alt="즐기고 vip로고"></h1>
+        <div id="lnb">
+            <ul>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">상담문의</a></li>
+            </ul>
+        </div>
+        <div id="gnb">
+          <div class="gnb_top">
+            <button id="btn-gnb_close">
+              <i class="material-icons">
+              close
+              </i>
+            </button>
+          </div>
+            <ul>
+                <li class="menu">
+                    <a href="#">숙박</a>
+                    <ul class="subMenu">
+                        <li><a href="#">FAMILY 등급</a></li>
+                        <li><a href="#">VIP 등급</a></li>
+                        <li><a href="#">SVIP 등급</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">초대</a>
+                    <ul class="subMenu">
+                        <li><a href="#">초대</a></li>
+                        <li><a href="#">레저</a></li>
+                        <li><a href="#">서핑</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">골프</a>
+                    <ul class="subMenu">
+                        <li><a href="#">일반</a></li>
+                        <li><a href="#">프리미엄</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">건강</a>
+                    <ul class="subMenu">
+                        <li><a href="#">유전자검사</a></li>
+                        <li><a href="#">건강검진</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">멤버십</a>
+                    <ul class="subMenu">
+                        <li><a href="#">스파</a></li>
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">공연</a></li>
+                        <li><a href="#">레저</a></li>
+                        <li><a href="#">꽃배달</a></li>
+                        <li><a href="#">체인펜션</a></li>
+                        <li><a href="#">하나투어</a></li>
+                        <li><a href="#">토탈웨딩</a></li>
+                        <li><a href="#">치과</a></li>
+                        <li><a href="#">안과</a></li>
+                        <li><a href="#">렌터카</a></li>
+                        <li><a href="#">신차구입</a></li>
+                        <li><a href="#">자동차보험</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">리빙</a>
+                    <ul class="subMenu">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">제휴서비스</a>
+                    <ul class="subMenu">
+                        <li><a href="#">제주여행</a></li>
+                        <li><a href="#">즐기고몰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="content">
+
+        <div class="complete_wrap">
+        <div class="check_svg" style="text-align: center; margin: auto; height: 60%; padding: 3%; max-width:150px ">
+        
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"
+                preserveAspectRatio="xMidYMid meet">
+        
+                <style type="text/css">
+                    .circle {
+                        fill: none;
+                        stroke: #333;
+                        stroke-width: 3;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                    }
+        
+                    .circle-dash {
+                        fill: none;
+                        stroke: #333;
+                        stroke-width: 3;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                    }
+        
+                    .check {
+                        fill: none;
+                        stroke: #333;
+                        stroke-width: 3;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 10;
+                    }
+        
+                    .check-dash {
+                        fill: none;
+                        stroke: #333;
+                        stroke-width: 3;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-miterlimit: 10;
+                    }
+        
+                    .check {
+                        stroke-dasharray: 60 100;
+                        animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                        -webkit-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                        -moz-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                        -o-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s;
+                        opacity: 0;
+                    }
+        
+                    @-webkit-keyframes check {
+                        from {
+                            stroke-dashoffset: 60;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 00;
+                            opacity: 1;
+                        }
+                    }
+        
+                    @-moz-keyframes check {
+                        from {
+                            stroke-dashoffset: 60;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 00;
+                            opacity: 1;
+                        }
+                    }
+        
+                    @keyframes check {
+                        from {
+                            stroke-dashoffset: 60;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 00;
+                            opacity: 1;
+                        }
+                    }
+        
+                    .check-dash {
+                        stroke-dasharray: 10 100;
+                        animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                        -webkit-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                        -moz-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                        -o-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards;
+                    }
+        
+                    @-webkit-keyframes check-dash {
+                        from {
+                            stroke-dashoffset: 120;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 45;
+                        }
+                    }
+        
+                    @-moz-keyframes check-dash {
+                        from {
+                            stroke-dashoffset: 120;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 45;
+                        }
+                    }
+        
+                    @keyframes check-dash {
+                        from {
+                            stroke-dashoffset: 120;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 45;
+                        }
+                    }
+        
+                    .circle {
+                        stroke-dasharray: 300 300;
+                        animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                        -webkit-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                        -moz-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                        -o-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s;
+                        opacity: 0;
+                    }
+        
+                    @-webkit-keyframes circle {
+                        from {
+                            stroke-dashoffset: 300;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 0;
+                            opacity: 1;
+                        }
+                    }
+        
+                    @-moz-keyframes circle {
+                        from {
+                            stroke-dashoffset: 300;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 0;
+                            opacity: 1;
+                        }
+                    }
+        
+                    @keyframes circle {
+                        from {
+                            stroke-dashoffset: 300;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 0;
+                            opacity: 1;
+                        }
+                    }
+        
+                    .circle-dash {
+                        stroke-dasharray: 10 300;
+                        animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+                        -webkit-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+                        -moz-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+                        -o-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+                        opacity: 0;
+                    }
+        
+                    @-webkit-keyframes circledash {
+                        from {
+                            stroke-dashoffset: 320;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 20;
+                            opacity: 1;
+                        }
+                    }
+        
+                    @-moz-keyframes circledash {
+                        from {
+                            stroke-dashoffset: 320;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 20;
+                            opacity: 1;
+                        }
+                    }
+        
+                    @keyframes circledash {
+                        from {
+                            stroke-dashoffset: 320;
+                            opacity: 1;
+                        }
+        
+                        to {
+                            stroke-dashoffset: 20;
+                            opacity: 1;
+                        }
+                    }
+                </style>
+                <g>
+                    <circle class="circle" cx="50" cy="49.9999657" r="47.5" />
+                    <circle class="circle-dash" cx="50" cy="49.9999657" r="47.5" />
+                    <polyline class="check" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	" />
+                    <polyline class="check-dash" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562 	" />
+                </g>
+            </svg>
+        </div>
+
+    <div class="completeTxt">
+        예약이 완료되었습니다.<br>
+        예약 내역은 추후에 마이페이지에서 확인할 수 있습니다.
+    </div>
+    <dl class="completeDetail">
+        <dt>시설 / 객실명</dt>
+        <dd>시그니엘 / 그랜드 디럭스</dd>
+    
+        <dt>숙박 기간</dt>
+        <dd>2021-05-04 ~ 2021-05-05</dd>
+    
+        <dt>요금</dt>
+        <dd>90,000원</dd>
+    
+        <dt>예약자 성명</dt>
+        <dd>홍길동</dd>
+    
+        <dt>예약자 연락처</dt>
+        <dd>010-0000-0000</dd>
+    </dl>
+        </div>
+    </div>
+
+    <div id="p_footer">
+      <ul id="footLinks">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li><a href="#">카탈로그</a></li>
+      </ul>
+      <div class="footBottom">
+      <div class="footContent_left">
+          <div class="footLogo">
+            <img src="img/logo.png" alt="즐기고 로고" />
+          </div>
+          <address>플랫폼 사업자 : (주)지마이다스 주소 : 서울시 금천구 가산디지털 1로 171(가산동) SK V1센터 501호 대표 : 김신우<br>
+          통신판매업신고번호 : 제 18-2427호 사업자등록번호 : 119-81-88110 개인정보관리 책임자 : 이요한</address>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">행복고객센터</span>
+        <div id="footCs">
+          <span>1644-9111</span><br>
+          평일 09:00 ~ 18:00<br>
+          주말/공휴일 휴무
+        </div>
+        <span id="mel">webmaster@gmidas.com</span>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">입금계좌번호</span>
+        <div id="footBank">
+            국민은행<br>
+            421701-04-028981<br>
+            예금주 (주)지마이다스
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--//footer -->
+</body>
+</html>

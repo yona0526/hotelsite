@@ -1,0 +1,771 @@
+<!-- 데이트피커 모바일 버전에서  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>즐기고 premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/newTour.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/basic_p.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_tablet.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_mobile.css" />
+  <!--  <script src="main.js"></script>-->
+
+  <script type="text/javascript" src="common/js/jquery-3.5.1.js"></script>
+
+  <script type="text/javascript" src="common/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="common/css/swiper.css">
+
+
+  <script type="text/javascript" src="common/js/owl.js"></script>
+  <script type="text/javascript" src="common/js/owl.nav.js"></script>
+  <link rel="stylesheet" href="common/css/owl.css">
+
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- jquery ui-->
+  <link rel="stylesheet" href="common/css/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="common/js/p_common.js"></script>
+  <link rel="stylesheet" href="common/css/flexslider.css" type="text/css">
+  <script src="common/js/jquery.flexslider.js"></script>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<!-- view페이지만 -->
+    <script type="text/javascript" src="common/js/newTour_view.js"></script>
+
+
+    <style>
+    .ui-datepicker-multi-2 {width:50em !important}
+
+    .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {border-bottom-right-radius:0px;border-top-right-radius:0px; border-bottom-left-radius: 0px;}
+    .ui-widget.ui-widget-content {border:1px solid #eee; box-shadow: #555 3px 3px 4px}
+
+    </style>
+    <script>
+
+    //datepicker관련
+    $.datepicker.setDefaults({
+        dateFormat: 'yy-mm-dd',
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년'
+    });
+
+    $(function () {
+        var dateFormat = "yy-mm-dd",
+            from = $("#from_web")
+                .datepicker({
+                    //setDate: "newDate"
+                    defaultDate: "+2w",
+                    changeMonth: false,
+                    numberOfMonths: 2
+                })
+                .on("change", function () {
+                    to.datepicker("option", "minDate", getDate(this));
+                }),
+            to = $("#to_web").datepicker({
+                defaultDate: "+2w",
+                changeMonth: false,
+                numberOfMonths: 2
+            })
+                .on("change", function () {
+                    from.datepicker("option", "maxDate", getDate(this));
+                }),
+            fromr = $("#fromr")
+                .datepicker({
+                    //setDate: "newDate"
+                    defaultDate: "+2w",
+                    changeMonth: false,
+                    numberOfMonths: 2
+                })
+                .on("change", function () {
+                    tor.datepicker("option", "minDate", getDate(this));
+                }),
+            tor = $("#tor").datepicker({
+                defaultDate: "+2w",
+                changeMonth: false,
+                numberOfMonths: 2
+            })
+                .on("change", function () {
+                    fromr.datepicker("option", "maxDate", getDate(this));
+                });
+
+        function getDate(element) {
+            console.log(element)
+            var date;
+            try {
+                date = $.datepicker.parseDate(dateFormat, element.value);
+            } catch (error) {
+                date = null;
+            }
+
+            return date;
+        }
+    });
+// datepicker ends
+
+
+//모바일 datepicker
+    $(function () {
+        var dateFormat = "yy-mm-dd",
+            from = $("#from_mob")
+                .datepicker({
+                    //setDate: "newDate"
+                    defaultDate: "+2w",
+                    changeMonth: false,
+                    numberOfMonths: 1
+                })
+                .on("change", function () {
+                    to.datepicker("option", "minDate", getDate(this));
+                }),
+            to = $("#to_mob").datepicker({
+                defaultDate: "+2w",
+                changeMonth: false,
+                numberOfMonths: 1
+            })
+                .on("change", function () {
+                    from.datepicker("option", "maxDate", getDate(this));
+                }),
+            fromr = $("#fromr_mob")
+                .datepicker({
+                    //setDate: "newDate"
+                    defaultDate: "+2w",
+                    changeMonth: false,
+                    numberOfMonths: 1
+                })
+                .on("change", function () {
+                    tor.datepicker("option", "minDate", getDate(this));
+                }),
+            tor = $("#tor_mob").datepicker({
+                defaultDate: "+2w",
+                changeMonth: false,
+                numberOfMonths: 1
+            })
+                .on("change", function () {
+                    fromr.datepicker("option", "maxDate", getDate(this));
+                });
+
+        function getDate(element) {
+            console.log(element)
+            var date;
+            try {
+                date = $.datepicker.parseDate(dateFormat, element.value);
+            } catch (error) {
+                date = null;
+            }
+
+            return date;
+        }
+    });
+// datepicker ends
+
+
+// 객실 레이어 뒷배경
+function funLoad(){
+        var Cheight = $('body').height();
+        $('.layerWrap').css({'height':Cheight+'px'});
+    }
+    window.onload = funLoad;
+    window.onresize = funLoad;
+    </script>
+     
+
+</head>
+<body>
+  <div class="header">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>
+      <a href="index.html"><img src="img/logo.png" alt="즐기고 vip로고"></a>
+    </h1>
+    <div id="lnb">
+      <ul>
+          <li><a href="#">
+            <span>마이페이지</span><i class="material-icons">person</i>
+          </a></li>
+          <li><a href="#">
+            <span>상담문의</span>
+            <i class="material-icons">contact_support</i>
+          </a></li>
+          <!--<li><a href="#">구매현황</a></li>-->
+          <li id="lnb-logout"><a href="#">
+            <span>로그아웃</span>
+            <i class="material-icons">logout</i>
+          </a></li>
+      </ul>
+    </div>
+    <div id="gnb">
+        <div class="gnb_top">
+            <button id="btn-gnb_close">
+              <i class="material-icons">
+              close
+              </i>
+            </button>
+          </div>
+      <div id="lnb_mob">
+        <ul>
+          <li><a href="#">마이페이지
+            
+          </a></li>
+          <li><a href="#">상담문의</a></li>
+          <li><a href="#">구매현황</a></li>
+          <li><a href="#">로그아웃</a></li>
+        </ul>
+      </div>
+      <ul>
+        <li class="menu">
+          <a href="#">숙박</a>
+          <ul class="subMenu">
+            <li><a href="#">FAMILY 등급</a></li>
+            <li><a href="#">VIP 등급</a></li>
+            <li><a href="#">SVIP 등급</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">초대</a>
+          <ul class="subMenu">
+            <li><a href="#">초대</a></li>
+            <li><a href="#">레저</a></li>
+            <li><a href="#">서핑</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">골프</a>
+          <ul class="subMenu">
+            <li><a href="#">일반</a></li>
+            <li><a href="#">프리미엄</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">건강</a>
+          <ul class="subMenu">
+            <li><a href="#">유전자검사</a></li>
+            <li><a href="#">건강검진</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">멤버십</a>
+          <ul class="subMenu">
+            <li><a href="#">스파</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">공연</a></li>
+            <li><a href="#">레저</a></li>
+            <li><a href="#">꽃배달</a></li>
+            <li><a href="#">체인펜션</a></li>
+            <li><a href="#">하나투어</a></li>
+            <li><a href="#">토탈웨딩</a></li>
+            <li><a href="#">치과</a></li>
+            <li><a href="#">안과</a></li>
+            <li><a href="#">렌터카</a></li>
+            <li><a href="#">신차구입</a></li>
+            <li><a href="#">자동차보험</a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">리빙</a>
+          <ul class="subMenu">
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="#">제휴서비스</a>
+          <ul class="subMenu">
+            <li><a href="#">제주여행</a></li>
+            <li><a href="#">즐기고몰</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="content">
+
+        <div class="location">
+            홈 / 숙박 / 제주 / <span class="currentLoca">즐기고 프리미엄 호텔</span>
+        </div>
+        <div class="tour_view">
+            <h3 class="hotelName">즐기고 프리미엄 호텔</h3>
+            <!-- 시설 이미지 슬라이드 -->
+            <div class="hotelImg">
+                <img src='img/ex1.jpg' alt="" />
+                <img src='img/ex2.jpg' alt="" />
+                <img src='img/ex3.jpg' alt="" />
+            </div>
+
+            <div class="tour_Searchbox">
+              <div id="tour_Datepick_web">
+
+                <label for="from_web">체크인</label>
+                <input type="text" id="from_web" name="from" placeholder=""onfocus="this.blur()" >
+
+                <label for="to_web">체크아웃</label>
+                <input type="text" id="to_web" name="to" placeholder="" onfocus="this.blur()">
+
+              </div>
+              <div id="tour_Datepick_mob">
+                <label for="from_mob">체크인</label>
+                <input type="text" id="from_mob" name="from" placeholder="" onfocus="this.blur()">
+
+                <label for="to_mob">체크아웃</label>
+                <input type="text" id="to_mob" name="to" placeholder="" onfocus="this.blur()">
+              </div>
+              <div id="tour_Coupon">
+                <select>
+                  <option>이용쿠폰을 선택해주세욤 </option>
+                  <option>쿠폰1</option>
+                  <option>쿠폰1245356345</option>
+                  <option>가나다루킨아ㅓㅣ쿠폰</option>
+                </select>
+              </div>
+              <button id="btn_roomSrch">검색</button>
+            </div>
+
+            <!-- 객실 목록  -->
+            <div class="con_tourView">
+                <h4>객실</h4>
+
+                <!-- 객실 레이어 -->
+                <div class="layerWrap">
+                <div class="room_layer">
+                    <a class="btn_close">
+                        &times;
+                    </a>
+                    <div style="overflow: hidden;">
+                        <div class="roomSlide">
+                            <ul class="slides" style="width:100%; height:100%">
+                            <li><img src="img/room1.jpg" alt="" /></li>
+                            <li><img src="img/room2.jpg" alt="" /></li>
+                            <li><img src="img/room3.jpg" alt="" /></li>
+                            <li><img src="img/room4.jpg" alt="" /></li>
+                            </ul>
+
+                        </div>
+                        <div class="rmLayer_title">
+                            <h5>디럭스 트윈</h5>
+                            <p>아름다운 바다의 오션뷰와 도시의 어쩌구
+                                전통을 어찌저찌 간직한 어쩌구저쩌구한
+                                방입니다.</p>
+                        </div>
+                        <div class="rmLayer_info">
+                            <dl>
+                              <dt>체크인</dt>
+                              <dd>15:00</dd>
+                            </dl>
+                            <dl>
+                              <dt>체크아웃</dt>
+                              <dd>11:00</dd>
+                            </dl>
+                            <dl>
+                              <dt>기준/최대인원</dt>
+                              <dd>2명/2명</dd>
+                            </dl>
+                            <dl>
+                              <dt>면적</dt>
+                              <dd>22㎡</dd>
+                            </dl>
+                            <dl>
+                              <dt>유형</dt>
+                              <dd>싱글베드 2</dd>
+                            </dl>
+                            <dl>
+                              <dt>뷰타입(옵션)</dt>
+                              <dd>오션뷰</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="rmLayer_downinfo">
+                        <dl class="rmLayer_amens">
+                            <dt>객실편의사항</dt>
+                            <div id="amens_dd">
+                                <dd>
+                                    <img src="img/shower.png" alt="샤워" />
+                                    <span>샤워시설</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/aircon.png" alt="샤워" />
+                                    <span>냉방시설</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/hairdryer.png" alt="드라이가" />
+                                    <span>헤어드라이어</span>
+                                </dd>
+                                <dd>
+                                    <img src="img/shower.png" alt="샤워" />
+                                    <span>샤워시설</span>
+                                </dd>
+
+                                <dd>기타 편의</dd>
+                        </dl>
+                        <div class="rmLayer_downinfo" id="rmLayer_price_web">
+                            <p>객실요금</p>
+                            <table>
+                                <caption>객실요금</caption>
+                                <tr>
+                                    <th>주중정상가</th>
+                                    <td>370,000원</td>
+                                    <th>주중할인가</th>
+                                    <td>90,000원</td>
+                                    <th>주중쿠폰</th>
+                                    <td>50,000원</td>
+                                </tr>
+                                <tr>
+                                    <th>주말정상가</th>
+                                    <td>370,000원</td>
+                                    <th>주말할인가</th>
+                                    <td>90,000원</td>
+                                    <th>주말쿠폰</th>
+                                    <td>50,000원</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="rmLayer_downinfo" id="rmLayer_price_mob">
+                            <p>객실요금</p>
+                            <table>
+                                <caption>객실요금</caption>
+                                <tr>
+                                  <th>주중정상가</th>
+                                  <td>370,000원</td>
+                                  <th>주말정상가</th>
+                                  <td>370,000원</td>
+                                </tr>
+                                <tr>
+                                  <th>주중할인가</th>
+                                  <td>90,000원</td>
+                                  <th>주말할인가</th>
+                                  <td>90,000원</td>
+                                </tr>
+                                <tr>
+                                  <th>주중쿠폰</th>
+                                  <td>50,000원</td>
+                                  <th>주말쿠폰</th>
+                                  <td>50,000원</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="rmLayer_downinfo btn_area">
+                            <button id="btn_book" onclick="location.href='payment.html'">
+                                <span>예약하기</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+                </div>
+
+                <!-- //객실 레이어 -->
+
+<!-- 객실 목록 슬라이드 -->
+            <div class="rmlist_wrap">
+                <div class="roomList swiper-container1">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide" id="room_Item">
+                            <div class="roomList_thumb">
+                                <img src="img/res_room1.jpg" alt="" />
+                            </div>
+                            <div class="roomList_Info">
+                                <div class="roomList_Name">
+                                    스탠다드 더블/트윈
+                                </div>
+                                <dl>
+                                    <dt>기준/최대인원</dt>
+                                    <dd>2명 / 2명</dd>
+                                </dl>
+                                <dl>
+                                    <dt>객실타입</dt>
+                                    <dd>트윈/더블</dd>
+                                </dl>
+                                <span class="roomList_Price">
+                                    ￦150,000~
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="roomList_thumb">
+                                <img src="img/res_room1.jpg" alt="" />
+                            </div>
+                            <div class="roomList_Info">
+                                <div class="roomList_Name">
+                                    스탠다드 더블/트윈
+                                </div>
+                                <dl>
+                                    <dt>기준/최대인원</dt>
+                                    <dd>2명 / 2명</dd>
+                                </dl>
+                                <dl>
+                                    <dt>객실타입</dt>
+                                    <dd>트윈/더블</dd>
+                                </dl>
+                                <span class="roomList_Price">
+                                    ￦150,000~
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="roomList_thumb">
+                                <img src="img/res_room1.jpg" alt="" />
+                            </div>
+                            <div class="roomList_Info">
+                                <div class="roomList_Name">
+                                    스탠다드 더블/트윈
+                                </div>
+                                <dl>
+                                  <dt>기준/최대인원</dt>
+                                  <dd>2명 / 2명</dd>
+                                </dl>
+                                <dl>
+                                  <dt>객실타입</dt>
+                                  <dd>트윈/더블</dd>
+                                </dl>
+                                <span class="roomList_Price">
+                                    ￦150,000~
+                                </span>
+                            </div>
+                        </li>
+
+                    <li class="swiper-slide">
+                        <div class="roomList_thumb">
+                            <img src="img/res_room2.jpg" alt="" />
+                        </div>
+                        <div class="roomList_Info">
+                            <div class="roomList_Name">
+                                스탠다드 더블/트윈
+                            </div>
+                            <dl>
+                              <dt>기준/최대인원</dt>
+                              <dd>2명 / 2명</dd>
+                            </dl>
+                            <dl>
+                              <dt>객실타입</dt>
+                              <dd>트윈/더블</dd>
+                            </dl>
+                            <span class="roomList_Price">
+                                ￦150,000~
+                            </span>
+                        </div>
+
+
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="roomList_thumb">
+                            <img src="img/res_room3.jpg" alt="" />
+                        </div>
+                        <div class="roomList_Info">
+                            <div class="roomList_Name">
+                                스탠다드 더블/트윈
+                            </div>
+                            <dl>
+                                <dt>기준/최대인원</dt>
+                                <dd>2명 / 2명</dd>
+                            </dl>
+                            <dl>
+                                <dt>객실타입</dt>
+                                <dd>트윈/더블</dd>
+                            </dl>
+                            <span class="roomList_Price">
+                                ￦150,000~
+                            </span>
+                        </div>
+                    </li>
+                    </ul>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button swiper-button-prev">prev</div>
+                <div class="swiper-button swiper-button-next">next</div>
+            </div>
+            </div>
+            <!--// 객실목록 -->
+
+            <!-- 시설소개-->
+            <div class="con_tourView">
+                <h4>시설소개</h4>
+                <div class="tourView_txt">
+                    소개를 입력해주세요. 이것은 즐기고에서 프리미엄 펜션 어쩌저쩌끼나ㅓ신서ㅑ네에러입력하세요 소개를 입력하라구요넨ㅇ러니ㅏㅓㅅ나ㅣ
+                    소개를 입력해주세요. 이것은 즐기고에서 프리미엄 펜션 어쩌저쩌끼나ㅓ신서ㅑ네에러입력하세요 소개를 입력하라구요넨ㅇ러니ㅏㅓㅅ나ㅣ
+                </div>
+            </div>
+            <!-- //시설소개 -->
+
+            <!-- 부대시설 -->
+            <div class="con_tourView">
+
+                <h4>부대시설</h4>
+                <div class="facilList">
+
+                  <ul class="owl-carousel owl-theme">
+                    <li class="roomList_thumb">
+                        <div class="facilList_thumb">
+                            <img src="img/facil01.jpg" alt=""/>
+                        </div>
+                        <div class="facilList_name">
+                            부대시설1
+                        </div>
+                    </li>
+                    <li class="roomList_thumb">
+                        <div class="facilList_thumb">
+                            <img src="img/facil2.png" alt="" />
+                        </div>
+                        <div class="facilList_name">
+                            부대시설2
+                        </div>
+                    </li>
+                    <li class="roomList_thumb">
+                        <div class="facilList_thumb">
+                            <img src="img/facil3.png" alt="" />
+                        </div>
+                        <div class="facilList_name">
+                            부대시설3
+                        </div>
+                    </li>
+
+                    <li class="roomList_thumb">
+                        <div class="facilList_thumb">
+                            <img src="img/facil4.jpg" alt="" />
+                        </div>
+                        <div class="facilList_name">
+                            부대시설4
+                        </div>
+                    </li>
+
+                    <li class="roomList_thumb">
+                        <div class="facilList_thumb">
+                            <img src="img/facil5.jpg" alt="" />
+                        </div>
+                        <div class="facilList_name">
+                            부대시설5
+                        </div>
+                    </li>
+                  </ul>
+
+                </div>
+            </div>
+            <!-- //부대시설 -->
+
+            <!-- 오시는길 -->
+          <div class="con_tourView">
+            <h4>오시는 길</h4>
+            <div class="tourDirection">
+              <div id="map" style=""></div>
+              <div class="mapOverlay">
+                  <div id="mapName">롯데시그니엘</div>
+                  <div id="mapAddr">서울시 금천구 가산디지털1로 171</div>
+                  <div id="mapPhone">02-1644-9111</div>
+              </div>
+            </div>
+          </div>
+            <!-- //오시는 길 -->
+
+            <!--주변 관광지-->
+          <div class="con_tourView">
+              <h4>주변관광지</h4>
+              <div class="sightList">
+                  <ul>
+                      <li>
+                          <img src="img/sight1.jpg" alt="" />
+                          <div class="sight_dim1">광화문</div>
+                      </li>
+                      <li>
+                          <img src="img/sight2.jpg" alt="" />
+                          <div class="sight_dim1">경복궁</div>
+                      </li>
+                      <li>
+                          <img src="img/sight3.jpg" alt="" />
+                          <div class="sight_dim1">관광3</div>
+                      </li>
+                      <li>
+                          <img src="img/sight4.jpg" alt="" />
+                          <div class="sight_dim1">서울타워</div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            <!-- //주변 관광지 -->
+
+            <!-- 이용안내 -->
+          <div class="con_tourView">
+            <h4>이용안내</h4>
+            <div class="tourView_txt">
+                ▣ 취소 및 위약금 규정<br>
+                환불 위약금 규정은 다음과 같습니다.<br>
+                - 사용일 6일 전 100% 환불<br>
+                - 사용일 5~4일 전 50% 환불<br>
+                - 사용일 3일 전 30% 환불<br>
+                - 사용일 2일 전 ~ 당일 환불 불가<br>
+                * 위약금 발생 시, 입금 금액에서 제외 후 환불되오니 유의 부탁드립니다.
+                <br><br>
+                ▣ 카드 취소 규정<br>
+                일반적으로 당사의 취소 처리 후, 4~6일 후에 카드사의 취소가 확인됩니다.<br>
+                그러나 취소한 시점과 카드사의 환불 기준에 따라서 취소된 금액의 환급방법/환급일은 다소 차이가 있을 수 있습니다.<br>
+                직불(체크)카드는 예약 취소 즉시 환불처리 되지만, 상황에 따라 다소 늦어질 수 있으며 자세한 사항은 결제한 카드사로 문의하시기 바랍니다.<br>
+                <br><br>
+                ▣ 숙박 공통 취소 규정<br>
+                예약 취소는 마이페이지를 통해 가능합니다.<br>
+
+            </div>
+          </div>
+            <!-- //이용안내 -->
+        </div>
+    </div>
+    </div>
+
+    <div id="p_footer">
+      <ul id="footLinks">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li><a href="#">카탈로그</a></li>
+      </ul>
+      <div class="footBottom">
+      <div class="footContent_left">
+          <div class="footLogo">
+            <img src="img/logo.png" alt="즐기고 로고" />
+          </div>
+          <address>플랫폼 사업자 : (주)지마이다스 주소 : 서울시 금천구 가산디지털 1로 171(가산동) SK V1센터 501호 대표 : 김신우<br>
+          통신판매업신고번호 : 제 18-2427호 사업자등록번호 : 119-81-88110 개인정보관리 책임자 : 이요한</address>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">행복고객센터</span>
+        <div id="footCs">
+          <span>1644-9111</span><br>
+          평일 09:00 ~ 18:00<br>
+          주말/공휴일 휴무
+        </div>
+        <span id="mel">webmaster@gmidas.com</span>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">입금계좌번호</span>
+        <div id="footBank">
+            국민은행<br>
+            421701-04-028981<br>
+            예금주 (주)지마이다스
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--//footer -->
+</body>
+</html>

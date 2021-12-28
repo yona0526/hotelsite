@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>즐기고 premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/newTour.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/basic_p.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_tablet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/css/media_mobile.css" />
+   <script src="common/js/main.js"></script>
+    <script type="text/javascript" src="common/js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="common/js/p_common.js"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="header">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>
+        <a href="index.html"><img src="img/logo.png" alt="즐기고 vip로고"></a>
+      </h1>
+      <div id="lnb">
+        <ul>
+            <li><a href="#">
+              <span>마이페이지</span><i class="material-icons">person</i>
+            </a></li>
+            <li><a href="#">
+              <span>상담문의</span>
+              <i class="material-icons">contact_support</i>
+            </a></li>
+            <!--<li><a href="#">구매현황</a></li>-->
+            <li id="lnb-logout"><a href="#">
+              <span>로그아웃</span>
+              <i class="material-icons">logout</i>
+            </a></li>
+        </ul>
+      </div>
+      <div id="gnb">
+        <div class="gnb_top">
+          <button id="btn-gnb_close">
+            <i class="material-icons">
+            close
+            </i>
+          </button>
+        </div>
+        <div id="lnb_mob">
+          <ul>
+            <li><a href="#">마이페이지
+              
+            </a></li>
+            <li><a href="#">상담문의</a></li>
+            <li><a href="#">구매현황</a></li>
+            <li><a href="#">로그아웃</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li class="menu">
+            <a href="#">숙박</a>
+            <ul class="subMenu">
+              <li><a href="#">FAMILY 등급</a></li>
+              <li><a href="#">VIP 등급</a></li>
+              <li><a href="#">SVIP 등급</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">초대</a>
+            <ul class="subMenu">
+              <li><a href="#">초대</a></li>
+              <li><a href="#">레저</a></li>
+              <li><a href="#">서핑</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">골프</a>
+            <ul class="subMenu">
+              <li><a href="#">일반</a></li>
+              <li><a href="#">프리미엄</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">건강</a>
+            <ul class="subMenu">
+              <li><a href="#">유전자검사</a></li>
+              <li><a href="#">건강검진</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">멤버십</a>
+            <ul class="subMenu">
+              <li><a href="#">스파</a></li>
+              <li><a href="#">영화</a></li>
+              <li><a href="#">공연</a></li>
+              <li><a href="#">레저</a></li>
+              <li><a href="#">꽃배달</a></li>
+              <li><a href="#">체인펜션</a></li>
+              <li><a href="#">하나투어</a></li>
+              <li><a href="#">토탈웨딩</a></li>
+              <li><a href="#">치과</a></li>
+              <li><a href="#">안과</a></li>
+              <li><a href="#">렌터카</a></li>
+              <li><a href="#">신차구입</a></li>
+              <li><a href="#">자동차보험</a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">리빙</a>
+            <ul class="subMenu">
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">제휴서비스</a>
+            <ul class="subMenu">
+              <li><a href="#">제주여행</a></li>
+              <li><a href="#">즐기고몰</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="content">
+        <div class="content_txt">
+            <h2>프리미엄 숙박</h2>
+            <div class="content_det">
+                숙박을 어쩌구저쩌구 엄선했습니다. 뭐 어저ㅉ구저쩌구많이 즐겨보세요.<Br> 블라블라 숙박 설명숙박을 어쩌구저쩌구 엄선했습니다. 뭐 어저ㅉ구저쩌구많이 즐겨보세요. 블라블라 숙박 설명
+            </div>
+        </div>
+        <div class="tour_list">
+            <ul>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex1.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button onclick="location.href='view.html'" id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex2.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex3.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex4.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex5.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">05551, 서울특별시 송파구 올림픽로 300 롯데월드타워 76-101층 / 02-3213-1000</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex1.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex2.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+                <li>
+                    <div class="tourList_thumb">
+                        <img src="img/res_ex3.jpg" alt="" />
+                    </div>
+                    <div class="tourList_info">
+                        <div class="tourName">프리미엄숙박시설</div>
+                        <span class="tourAddr">제주 서귀포시 중문관광로72번길 35 롯데호텔 제주</span>
+                    </div>
+                    <button id="btn_tourView">예약하기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="p_footer">
+      <ul id="footLinks">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">오시는길</a></li>
+        <li><a href="#">카탈로그</a></li>
+      </ul>
+      <div class="footBottom">
+      <div class="footContent_left">
+          <div class="footLogo">
+            <img src="img/logo.png" alt="즐기고 로고" />
+          </div>
+          <address>플랫폼 사업자 : (주)지마이다스 주소 : 서울시 금천구 가산디지털 1로 171(가산동) SK V1센터 501호 대표 : 김신우<br>
+          통신판매업신고번호 : 제 18-2427호 사업자등록번호 : 119-81-88110 개인정보관리 책임자 : 이요한</address>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">행복고객센터</span>
+        <div id="footCs">
+          <span>1644-9111</span><br>
+          평일 09:00 ~ 18:00<br>
+          주말/공휴일 휴무
+        </div>
+        <span id="mel">webmaster@gmidas.com</span>
+      </div>
+      <div class="footContent_right">
+        <span class="footTitle">입금계좌번호</span>
+        <div id="footBank">
+            국민은행<br>
+            421701-04-028981<br>
+            예금주 (주)지마이다스
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--//footer -->
+</body>
+</html>
