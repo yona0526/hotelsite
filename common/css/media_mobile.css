@@ -2,6 +2,10 @@
 /*======================= Mobile 520 px ~ =======================*/
 /*===============================================================*/
 @media only screen and (max-width:520px){
+   html,body {
+      width:100%;
+      overflow-x:hidden;
+   }
    .header {
       height:auto;
       padding:3vw 5vw;
