@@ -4,7 +4,7 @@
 @media only screen and (max-width:520px){
    html,body {
       width:100%;
-      overflow-x:hidden;
+      overflow-x: hidden;
    }
    .header {
       height:auto;
@@ -88,11 +88,20 @@
 .slide_web {
    display: none;
 }
+.mainEventWrap {
+   padding:0 7%;
+   margin:0 auto;
+}
 .eventLayer {
    width: 74%;
    left:5%;
 }
+.mainEventWrap .bx-wrapper .bx-viewport {
+   padding-left:3%;
+}
+.mainEventWrap .bx-wrapper {
 
+}
 .mobilLink a {width:30%;}
 .mobilLink a:nth-child(2) {
    margin:0 1%;

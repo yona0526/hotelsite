@@ -528,7 +528,9 @@
   width:100%;
   object-fit: cover;
 }
-
+.mainEventWrap .bx-wrapper .bx-viewport {
+  border:0;
+}
 .mainContent .mainEvent li:hover {
   background: #eee
 }
