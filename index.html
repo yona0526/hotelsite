@@ -21,7 +21,7 @@
     <Script>
 
 
-    $(function () {
+ 
         
 
     $(document).ready(function () {
@@ -30,14 +30,18 @@
             pager:true,
             controls:true
         });
+
     });
  
 
     $(document).ready(function () {
+      $('.eventLayer').hide();
+    
+
         $('.mainEvent').bxSlider({
             mode:'fade',
             controls:false,
-            slideWidth: 370,
+            slideWidth: 360,
             minSlides: 1,
             maxSlides: 3,
             moveSlides: 1,
@@ -46,16 +50,14 @@
             mode: 'horizontal'
           //  slideWidth : 370
         });
-    });
 
-        $('.eventLayer').hide();
         $('.mainEvent li').click(function(){
-            $('.eventLayer').fadeIn(250);
-        });
-        $('#btn_close').click(function(){
-            $(this).parent('.eventLayer').fadeOut(250);
-        });
-
+          $('.eventLayer').show(250);
+      });
+      $('#btn-closeEvent').click(function(){
+          $(this).parent('.eventLayer').hide(250);
+      });
+   
     });
 
 
@@ -174,16 +176,16 @@
       <div class="mainContent">
         <div class="indexSlide slide_web">
           <ul>
-            <li><img src="img/zzz.jpg" alt=""/></li>
-            <li><img src="img/zzz1.jpg" alt="" /></li>
+            <li><img src="img/zzz.jpg" alt="겨울 패키지"/></li>
+            <li><img src="img/zzz1.jpg" alt="스키 스노우보드" /></li>
           </ul>
         </div>
         <div class="indexSlide slide_mob">
           <ul>
             <li>
-              <img src="img/main_mob1.jpg" alt="" />
+              <img src="img/main_mob1.jpg" alt="겨울 패키지" />
             </li>
-            <li><img src="img/zzz1.jpg" alt="" /></li>
+            <li><img src="img/zzz1.jpg" alt="스키 스노우보드" /></li>
           </ul>
         </div>
       </div>
@@ -251,7 +253,7 @@
           <ul  class="mainEvent">
             <li>
                 <div class="eventThumb">
-                  <img src="img/event/event1.jpg" />
+                  <img src="img/event/event1.jpg" alt="이벤트1" />
                 </div>
                 <div class="eventTit">이벤트ㅔ목fsdfsdfsd제목이 아주 길어서잘라야 하는경우f가 있찌 않씃비낚</div>
               <!--  <div class="eventTxt">이벤트 내용들어가미나얼ㄴ<br>;ㅑㅓㅁㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
@@ -263,19 +265,19 @@
             </li>
             <li>
                 <div class="eventThumb">
-                  <img src="img/event/event2.jpg" />
+                  <img src="img/event/event2.jpg" alt="이벤트2" />
                 </div>
                 <div class="eventTit">이벤트ㅔ목2</div>
             </li>
             <li>
                 <div class="eventThumb">
-                  <img src="img/event/event3.jpg" />
+                  <img src="img/event/event3.jpg" alt="이벤트3" />
                 </div>
                 <div class="eventTit">이벤트ㅔ목3</div>
             </li>
             <li>
               <div class="eventThumb">
-                <img src="img/event/event1.jpg" />
+                <img src="img/event/event1.jpg" alt="이벤트1" />
               </div>
               <div class="eventTit">이벤트ㅔ목fsdfsdfsd제목이 아주 길어서잘라야 하는경우f가 있찌 않씃비낚</div>
             <!--  <div class="eventTxt">이벤트 내용들어가미나얼ㄴ<br>;ㅑㅓㅁㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
@@ -287,22 +289,22 @@
           </li>
           <li>
               <div class="eventThumb">
-                <img src="img/event/event2.jpg" />
+                <img src="img/event/event2.jpg" alt="이벤트2" />
               </div>
               <div class="eventTit">이벤트ㅔ목2</div>
           </li>
           <li>
               <div class="eventThumb">
-                <img src="img/event/event3.jpg" />
+                <img src="img/event/event3.jpg" alt="이벤트3" />
               </div>
               <div class="eventTit">이벤트ㅔ목3</div>
           </li>
           </ul>
           </div>
           <div class="eventLayer">
-            <a href="#" id="btn_close">&times;</a>
+            <a href="#" id="btn-closeEvent">&times;</a>
             <div class="eLayer_tit">이벤트제목ㄴㅇㄹ나ㅓ시ㅏ널</div>
-            <img src="/images/main/josun_not2.jpg" />
+            <img src="img/event/event3.jpg" alt="이벤트3" />
             <div class="eLayer_txt">
                 나랏말싸미 듕귁에 달아 문자와로 서르 사맛디 아니할쎄
                 이런 전차로 어린 백셩이 니르고져 홇베이셔도 마참네 제 뜨들 시러펴디 몯핧 노미하니아
@@ -361,5 +363,11 @@
     </div>
     <!--//footer -->
 </body>
+<script>
+
+
+
+
+</script>
 
 </html>
