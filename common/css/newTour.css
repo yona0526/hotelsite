@@ -370,7 +370,7 @@
   height: 45px
 }
 
-.tour_list ul li #btn_tourView {
+.tour_list ul li .btn_tourView {
   width: 180px;
   height: 45px;
   background: #957741;
@@ -380,7 +380,7 @@
   float: right;
 }
 
-#btn_tourView {
+.btn_tourView {
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -392,11 +392,11 @@
   -webkit-transition: 0.5s ease-in;
 }
 
-#btn_tourView:hover {
+.btn_tourView:hover {
   color: whitesmoke;
 }
 
-#btn_tourView:before {
+.btn_tourView:before {
   content: "";
   position: absolute;
   background: #383736;
@@ -408,7 +408,7 @@
   -webkit-transition: right 0.09s ease-in;
 }
 
-#btn_tourView:hover:before {
+.btn_tourView:hover:before {
   right: 0;
 }
 /* index */
