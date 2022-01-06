@@ -313,7 +313,7 @@ function funLoad(){
               <div id="tour_Datepick_web">
 
                 <label for="from_web">체크인</label>
-                <input type="text" id="from_web" name="from" placeholder=""onfocus="this.blur()" >
+                <input type="text" id="from_web" name="from" placeholder=" "onfocus="this.blur()" >
 
                 <label for="to_web">체크아웃</label>
                 <input type="text" id="to_web" name="to" placeholder="" onfocus="this.blur()">
@@ -392,79 +392,80 @@ function funLoad(){
                     </div>
 
                     <div class="rmLayer_downinfo">
-                        <dl class="rmLayer_amens">
-                            <dt>객실편의사항</dt>
-                            <div id="amens_dd">
-                                <dd>
-                                    <img src="img/shower.png" alt="샤워" />
-                                    <span>샤워시설</span>
-                                </dd>
-                                <dd>
-                                    <img src="img/aircon.png" alt="샤워" />
-                                    <span>냉방시설</span>
-                                </dd>
-                                <dd>
-                                    <img src="img/hairdryer.png" alt="드라이가" />
-                                    <span>헤어드라이어</span>
-                                </dd>
-                                <dd>
-                                    <img src="img/shower.png" alt="샤워" />
-                                    <span>샤워시설</span>
-                                </dd>
+                        <dl class="rmLayer_amens"  id="amens_dd">
+                          <dt>객실편의사항</dt>
+                          <!-- <div> -->
+                          <dd>
+                              <img src="img/shower.png" alt="샤워" />
+                              <span>샤워시설</span>
+                          </dd>
+                          <dd>
+                              <img src="img/aircon.png" alt="샤워" />
+                              <span>냉방시설</span>
+                          </dd>
+                          <dd>
+                              <img src="img/hairdryer.png" alt="드라이가" />
+                              <span>헤어드라이어</span>
+                          </dd>
+                          <dd>
+                              <img src="img/shower.png" alt="샤워" />
+                              <span>샤워시설</span>
+                          </dd>
 
-                                <dd>기타 편의</dd>
+                          <dd>기타 편의</dd>
                         </dl>
-                        <div class="rmLayer_downinfo" id="rmLayer_price_web">
-                            <p>객실요금</p>
-                            <table>
-                                <caption>객실요금</caption>
-                                <tr>
-                                    <th>주중정상가</th>
-                                    <td>370,000원</td>
-                                    <th>주중할인가</th>
-                                    <td>90,000원</td>
-                                    <th>주중쿠폰</th>
-                                    <td>50,000원</td>
-                                </tr>
-                                <tr>
-                                    <th>주말정상가</th>
-                                    <td>370,000원</td>
-                                    <th>주말할인가</th>
-                                    <td>90,000원</td>
-                                    <th>주말쿠폰</th>
-                                    <td>50,000원</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="rmLayer_downinfo" id="rmLayer_price_mob">
-                            <p>객실요금</p>
-                            <table>
-                                <caption>객실요금</caption>
-                                <tr>
+
+                      <div class="rmLayer_downinfo" id="rmLayer_price_web">
+                          <p>객실요금</p>
+                          <table>
+                              <caption>객실요금</caption>
+                              <tr>
                                   <th>주중정상가</th>
                                   <td>370,000원</td>
-                                  <th>주말정상가</th>
-                                  <td>370,000원</td>
-                                </tr>
-                                <tr>
                                   <th>주중할인가</th>
                                   <td>90,000원</td>
-                                  <th>주말할인가</th>
-                                  <td>90,000원</td>
-                                </tr>
-                                <tr>
                                   <th>주중쿠폰</th>
                                   <td>50,000원</td>
+                              </tr>
+                              <tr>
+                                  <th>주말정상가</th>
+                                  <td>370,000원</td>
+                                  <th>주말할인가</th>
+                                  <td>90,000원</td>
                                   <th>주말쿠폰</th>
                                   <td>50,000원</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="rmLayer_downinfo btn_area">
-                            <button id="btn_book" onclick="location.href='payment.html'">
-                                <span>예약하기</span>
-                            </button>
-                        </div>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="rmLayer_downinfo" id="rmLayer_price_mob">
+                          <p>객실요금</p>
+                          <table>
+                              <caption>객실요금</caption>
+                              <tr>
+                                <th>주중정상가</th>
+                                <td>370,000원</td>
+                                <th>주말정상가</th>
+                                <td>370,000원</td>
+                              </tr>
+                              <tr>
+                                <th>주중할인가</th>
+                                <td>90,000원</td>
+                                <th>주말할인가</th>
+                                <td>90,000원</td>
+                              </tr>
+                              <tr>
+                                <th>주중쿠폰</th>
+                                <td>50,000원</td>
+                                <th>주말쿠폰</th>
+                                <td>50,000원</td>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="rmLayer_downinfo btn_area">
+                          <button id="btn_book" onclick="location.href='payment.html'">
+                              <span>예약하기</span>
+                          </button>
+                      </div>
                     </div>
 
                     <div>
