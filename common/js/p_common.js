@@ -1,5 +1,8 @@
 
+
 $(function () {
+
+
   $('.subMenu').hide();
 
   $(".menu>a").click(function () {
@@ -24,4 +27,5 @@ $(function () {
       "left":"-100%",
     },150);
   });
+
 });

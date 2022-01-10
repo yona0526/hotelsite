@@ -47,7 +47,7 @@
   z-index: 999;
   left:-30%;
   top:0;
-  background:#333;
+  background:#eee;
   height:100%;
 }
 
@@ -60,7 +60,7 @@
 }
 .header .gnb_top {
   background:#333;
-  height:5.3vw;
+  /* height:5.3vw; */
   padding:1.2vw;
   box-sizing:border-box;
 }
@@ -68,7 +68,7 @@
   background:#333;
 }
 .header .gnb_top #btn-gnb_close i {
-  color:whitesmoke;
+  color:#eee;
   font-size:37px;
 }
 
@@ -77,8 +77,8 @@
   line-height: 60px;
   height: 60px;
   border-bottom: 1px solid #eee;
-  /* position: relative; */
-  background: whitesmoke;
+  position: relative;
+  background: #eee;
   color: #333;
 }
 
@@ -102,7 +102,6 @@
   position: absolute;
   top: 0px;
   left: 100%;
-  margin-top:5.3vw;
 }
 
 #gnb .subMenu li {
@@ -157,7 +156,7 @@
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  background: whitesmoke;
+  background: #eee;
   border-radius: 3px;
   z-index: 1;
   /* transform-origin: 4px 0px;
@@ -374,7 +373,7 @@
   width: 180px;
   height: 45px;
   background: #957741;
-  color: whitesmoke;
+  color: #eee;
   font-size: 1.13em;
   font-weight: 400;
   float: right;
@@ -393,7 +392,7 @@
 }
 
 .btn_tourView:hover {
-  color: whitesmoke;
+  color: #eee;
 }
 
 .btn_tourView:before {
@@ -570,9 +569,12 @@
   box-shadow: 0 0 0 999px rgb(0, 0, 0, 0.7);
   padding: 45px 30px;
   border-radius: 30px;
+  overflow-y: scroll;
 }
-
-.eventLayer #btn_close {
+.eventLayer img {
+  width:100%
+}
+.eventLayer #btn-closeEvent {
   font-size: 2.5em;
   position: Absolute;
   top: 10px;
@@ -580,7 +582,7 @@
   color: #575757
 }
 
-.eventLayer #btn_close:hover {
+.eventLayer #btn-closeEvent:hover {
   color: #333
 }
 
@@ -594,7 +596,8 @@
 .eventLayer .eLayer_txt {
   margin-top: 15px;
   font-weight: 300;
-  font-size: 1.2em
+  font-size: 1.2em;
+  
 }
 
 /* 숙박 뷰 페이지 */
@@ -1207,7 +1210,7 @@
 }
 
 #btn_book:hover {
-  color: whitesmoke;
+  color: #eee;
 }
 
 #btn_book:before {

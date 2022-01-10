@@ -243,7 +243,8 @@
     }
     
     .room_layer .rmLayer_downinfo .rmLayer_amens {
-       flex-direction: column
+       display:block;
+       
     }
     .room_layer .rmLayer_downinfo .rmLayer_amens dt {
        margin-bottom:6vw;
