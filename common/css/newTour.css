@@ -8,7 +8,7 @@
 .header h1 {
   width: 70px;
   display: inline-block;
-  margin-left: 1%;
+  margin-left: 2%;
   margin-top: -9px;
   cursor: pointer
 }
@@ -39,7 +39,7 @@
 }
 
 .header #gnb {
-  width: 20%;
+  width: 14.5%;
   /* margin-top: 10px; 
   border: 1px solid rgb(216, 216, 216);
    margin-left: -10px; */
@@ -63,9 +63,11 @@
   /* height:5.3vw; */
   padding:1.2vw;
   box-sizing:border-box;
+  text-align: right;
 }
 .header .gnb_top #btn-gnb_close {
   background:#333;
+  display:inline-block
 }
 .header .gnb_top #btn-gnb_close i {
   color:#eee;
@@ -74,8 +76,8 @@
 
 .header #gnb .menu {
   font-size: 15px;
-  line-height: 60px;
-  height: 60px;
+  line-height: 55px;
+  height: 55px;
   border-bottom: 1px solid #eee;
   position: relative;
   background: #eee;
@@ -570,9 +572,12 @@
   padding: 45px 30px;
   border-radius: 30px;
   overflow-y: scroll;
+  text-align: center;
 }
 .eventLayer img {
-  width:100%
+  width:60%;
+  display:block;
+  margin:0 auto 10px;
 }
 .eventLayer #btn-closeEvent {
   font-size: 2.5em;
@@ -580,6 +585,12 @@
   top: 10px;
   right: 15px;
   color: #575757
+}
+.eventLayer .event-link {
+  margin-top:10px;
+  display:block;
+  color:#957741;
+  font-weight:bold
 }
 
 .eventLayer #btn-closeEvent:hover {

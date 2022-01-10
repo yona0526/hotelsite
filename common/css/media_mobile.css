@@ -24,7 +24,7 @@
       padding:3vw;
    }
    .header #gnb .menu {
-      height:auto
+      /* height:auto */
    }
    #gnb .subMenu {
       height:100%;
@@ -96,12 +96,20 @@
    width: 74%;
    left:5%;
 }
+.eventLayer img {
+   width:100%
+}
+.eventLayer .eLayer_tit {
+   font-size:1.66em;
+}
 .mainEventWrap .bx-wrapper .bx-viewport {
    padding-left:3%;
+   border:0;
 }
 .mainEventWrap .bx-wrapper {
-
+ 
 }
+
 .mobilLink a {width:30%;}
 .mobilLink a:nth-child(2) {
    margin:0 1%;
@@ -209,6 +217,7 @@
    #ui-datepicker-div {
       width:95%;
       left:1% !important;
+      z-index:88 !important
    }
    
    .rmlist_wrap .swiper-button-prev,
