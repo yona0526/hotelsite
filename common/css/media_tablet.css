@@ -127,6 +127,13 @@
     .rmlist_wrap {
       padding: 0 6vw
     }
+
+/*view page*/
+
+
+    .tour_Searchbox #tour_Datepick_web {
+      width:48%;
+    }
     
     .room_layer {
       box-sizing: border-box;
@@ -137,6 +144,7 @@
     }
 
     /* 객실팝업 */
+
     .room_layer .roomSlide {
       width:100%;
     }
@@ -199,13 +207,13 @@
 
     /*결제 페이지 */
     .payContent .pay_dl {
-      font-size:2vw;
+      font-size:1.6vw;
     }
     .pay_dl dd input {
       height:4vw;
     }
     .termsCons li label {
-      font-size:2vw;
+      font-size:1.6vw;
     }
     .termsCons .radio_check {
       top:3px;
@@ -255,6 +263,7 @@
     .tour_Searchbox {
       margin-top:6vw;
     }
+    
     .tour_Searchbox label,
     .tour_Searchbox #tour_Datepick input,
     .tour_Searchbox button,

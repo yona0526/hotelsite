@@ -665,7 +665,7 @@
   right: 10px;
 }
 
-.tour_view #ui-datepicker-div {
+#ui-datepicker-div {
   z-index: 99 !important
 }
 
@@ -874,7 +874,9 @@
   width: 100%;
 }
 
-
+.sightList {
+  overflow:hidden;;
+}
 .sightList li {
   width: 23%;
   margin-right: 2%;
@@ -936,10 +938,10 @@
 }
 
 .tour_Searchbox #tour_Datepick_web {
-  width: 44%;
+  /* width: 44%; */
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: space-between
 }
 
 .tour_Searchbox #tour_Datepick_web #datepicker_in {
@@ -1073,7 +1075,7 @@
 .room_layer .roomSlide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .room_layer .roomSlide .room_layer .rmLayer_title {

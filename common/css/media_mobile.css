@@ -76,7 +76,8 @@
    padding:1.5vw 0;
 }
 .mainContent .main_Intro .mIntro_txt {
-   line-height:2em;
+   font-size:2.6vw;
+   line-height:3.2vw;
 }
 .mainContent .indexSlide li img {
    height:130vw;
@@ -118,6 +119,15 @@
    font-size:12px;
 }
 
+
+/*list page*/
+.content_txt h2 {
+   font-size:6vw;
+}
+.content_txt .content_det {
+   font-size:3.2vw;
+   margin-bottom:4%;
+}
    .tour_list {
       padding-left:0;
    }
@@ -181,6 +191,10 @@
       color: #333;
       font-size: 1.25em;
    }
+
+   #p_footer #footLinks a, .footContent #mel, .footContent #footBank, .footContent #footCs {
+      font-size:2.6vw;
+   }
    .footContent_left {
       width:100%;
    }
@@ -192,7 +206,14 @@
       margin-top:5%;
       text-align:left;
    }
-
+   .footContent_left address {font-size:2.6vw;}
+   .footContent_right .footTitle {
+      font-size:3vw;
+   }
+   .footContent_right #footCs, .footContent_right #mel, .footContent_right #footBank {
+      font-size:2.6vw;
+      line-height:3.2vw;
+   }
 
    .tour_Searchbox #tour_Datepick_mob input::-webkit-input-placeholder {
       color: #333;
@@ -217,7 +238,7 @@
    #ui-datepicker-div {
       width:95%;
       left:1% !important;
-      z-index:88 !important
+      
    }
    
    .rmlist_wrap .swiper-button-prev,
@@ -231,7 +252,8 @@
    }
    .room_layer {
       top:300px;
-      padding:45px 0 0
+      padding:45px 0 0;
+      height:800px;
    }
    .room_layer .roomSlide {
       height:100vw;
@@ -256,7 +278,6 @@
        
     }
     .room_layer .rmLayer_downinfo .rmLayer_amens dt {
-       margin-bottom:6vw;
        margin-right:3%;
     }
     .room_layer #rmLayer_price_web {
@@ -335,6 +356,20 @@
       left:0;
       top:0;
    } */
+
+   .payContent .pay_txt {
+      margin-bottom:6%;
+   }
+   .pay_txt #termsCons_txt {
+      padding:3% 6%;
+      font-size:2.8vw;
+      margin-bottom:
+   }
+   .pay_txt #termsCons_txt span {
+      font-weighT:bold;
+   }
+
+
    /*complete*/
    .complete_wrap {
       padding:3% 11%;
