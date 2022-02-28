@@ -18,50 +18,9 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <Script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-
- 
-        
-
-    $(document).ready(function () {
-        $('.indexSlide >ul').bxSlider({
-            mode:'fade',
-            pager:true,
-            controls:true
-        });
-
-    });
- 
-
-    $(document).ready(function () {
-      $('.eventLayer').hide();
-    
-
-        $('.mainEvent').bxSlider({
-            mode:'fade',
-            controls:false,
-            slideWidth: 360,
-            minSlides: 1,
-            maxSlides: 3,
-            moveSlides: 1,
-            slideMargin: 60,
-            pager: true,
-            mode: 'horizontal'
-          //  slideWidth : 370
-        });
-
-        $('.mainEvent li').click(function(){
-          $('.eventLayer').show(250);
-      });
-      $('#btn-closeEvent').click(function(){
-          $(this).parent('.eventLayer').hide(250);
-      });
-   
-    });
-
-
-    </Script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -221,9 +180,35 @@
 
       <div class="mainContent mainEventWrap">
           <h2>EVENT</h2>
-          <div>
-          <ul  class="mainEvent">
-            <li>
+          <div class="swiper">
+            <ul  class="mainEvent swiper-wrapper">
+              <li class="swiper-slide">
+                  <div class="eventThumb">
+                    <img src="img/event/event1.jpg" alt="이벤트1" />
+                  </div>
+                  <div class="eventTit">Bed & Braeakfast Package<br>
+                    조식패키지 기획전
+                  </div>
+                <!--  <div class="eventTxt">이벤트 내용들어가미나얼ㄴ<br>;ㅑㅓㅁㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                      ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
+                      ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
+                      ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                      ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
+                  </div>-->
+              </li>
+              <li class="swiper-slide">
+                  <div class="eventThumb">
+                    <img src="img/event/event2.jpg" alt="이벤트2" />
+                  </div>
+                  <div class="eventTit">이벤트ㅔ목2</div>
+              </li>
+              <li class="swiper-slide">
+                  <div class="eventThumb">
+                    <img src="img/event/event3.jpg" alt="이벤트3" />
+                  </div>
+                  <div class="eventTit">이벤트ㅔ목3</div>
+              </li>
+              <li class="swiper-slide">
                 <div class="eventThumb">
                   <img src="img/event/event1.jpg" alt="이벤트1" />
                 </div>
@@ -236,35 +221,8 @@
                     ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
                     ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
                 </div>-->
-            </li>
-            <li>
-                <div class="eventThumb">
-                  <img src="img/event/event2.jpg" alt="이벤트2" />
-                </div>
-                <div class="eventTit">이벤트ㅔ목2</div>
-            </li>
-            <li>
-                <div class="eventThumb">
-                  <img src="img/event/event3.jpg" alt="이벤트3" />
-                </div>
-                <div class="eventTit">이벤트ㅔ목3</div>
-            </li>
-            <li>
-              <div class="eventThumb">
-                <img src="img/event/event1.jpg" alt="이벤트1" />
-              </div>
-              <div class="eventTit">Bed & Braeakfast Package<br>
-                조식패키지 기획전
-              </div>
-            <!--  <div class="eventTxt">이벤트 내용들어가미나얼ㄴ<br>;ㅑㅓㅁㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
-                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
-                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가<br>
-                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
-                  ㄴ;ㅑㄹ어;ㄴ이벤트 내용도 길어질떄가
-              </div>-->
-          </li>
-
-          </ul>
+              </li>
+            </ul>
           </div>
 
             <div class="eventLayer">
@@ -334,9 +292,63 @@
     </div>
     <!--//footer -->
 </body>
+
 <script>
 
+$(window).on("load",function(){
+    $('.eventLayer').hide();
+    $('.mainEvent li').click(function(){
+      $('.eventLayer').show(250);
+    });
+    $('#btn-closeEvent').click(function(){
+        $(this).parent('.eventLayer').hide(250);
+    });
+  });
 
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 30,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 3,
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+  $(document).ready(function () {
+    $('.indexSlide >ul').bxSlider({
+        mode:'fade',
+        pager:true,
+        controls:true
+    });
+    /*
+    $('.mainEvent').bxSlider({
+        mode:'fade',
+        controls:false,
+        slideWidth: 360,
+        minSlides: 1,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 60,
+        pager: true,
+        mode: 'horizontal'
+      //  slideWidth : 370
+    });*/
+});
 
 
 </script>
