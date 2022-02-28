@@ -175,38 +175,6 @@ $('.agree_check label').click(function() {
 
 
 
-// 메인 이벤트 bx슬라이더
-//$('.main_event ul').bxSlider();
-
-
-
-    //퀵메뉴
-
-
-
-    //렌탈페이백 탭
-	$(".payback_conts").hide();
-	$(".payback_conts:first").show();
-
-	$(".payback_tab li").click(function () {
-        $(this).siblings().removeClass("pay_active");
-	$(this).addClass("pay_active");
-	$(".payback_conts").hide()
-        var activeTab = $(this).attr("rel");
-		$("#" + activeTab).fadeIn()
-    });
-
-	//멤버십 탭
-	$(".mbship_conts").hide();
-	$(".mbship_conts:first").show();
-
-	$(".mbship_tab li").click(function () {
-        $(this).siblings().removeClass("mb_active");
-	$(this).addClass("mb_active");
-	$(".mbship_conts").hide()
-        var activeTab = $(this).attr("rel");
-		$("#" + activeTab).fadeIn()
-    });
 
 
 
