@@ -128,6 +128,12 @@
       padding: 0 6vw
     }
 
+    .btn_tourView {
+      transition: none;
+    }
+    .btn_tourView:before {
+      transition:none;
+    }
 /*view page*/
 
 
@@ -164,6 +170,8 @@
     }
     .rmLayer_amens {display:flex;}
 
+    .btn_book {transition: none;} 
+    .btn_book:before { transition:none;}
     .con_tourView {
         padding:0 3.5%;
     }
@@ -204,6 +212,7 @@
     .tourDirection .mapOverlay #mapPhone {
         font-size:1.8vw;
     }
+    
 
     /*결제 페이지 */
     .payContent .pay_dl {
