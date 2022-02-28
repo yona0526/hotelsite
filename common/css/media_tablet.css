@@ -38,7 +38,7 @@
     .tour_list ul li .tourList_thumb {
         height:27vw;
     }
-    .tour_list ul li #btn_tourView {
+    .tour_list ul li .btn_tourView {
         width:100%;
         height:4.5vw;
         font-size:1.05em;
@@ -279,8 +279,12 @@
     .tour_Searchbox #tour_Coupon select {
         font-size:1.12em;
     }
-    .tour_list ul li #btn_tourView {
+    .tour_list ul li .tourAddr {
+      height:5vw;
+    }
+    .tour_list ul li .btn_tourView {
         height:5vw;
+        width:50%;
     }
     .roomList .roomList_Info {
       padding:2.3vw;

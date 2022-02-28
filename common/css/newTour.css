@@ -481,7 +481,9 @@
   max-height: 50px;
   overflow: hidden;
 }
-
+.mainContent.mainEventWrap {
+  padding:0 11.5vw;
+}
 .mainContent .mainEvent {
   text-align: center;
 }

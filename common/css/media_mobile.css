@@ -137,15 +137,23 @@
       flex-wrap:wrap;
       justify-content: center;
    }
+   .tour_list ul li {
+      width:90%;
+      margin-bottom:10%;
+   }
    .tour_list ul li .tourName {
       font-size:4.5vw;
    }
    .tour_list ul li .tourAddr {
      font-size: 3.1vw;
-     height:15vw;
+     height:auto;
    }
-   .tour_list ul li #btn_tourView {
+   .tour_list ul li .btn_tourView {
       height:8.5vw;
+      margin-top:3.5vw;
+   }
+   .tour_list ul li .tourList_thumb {
+      height:55vw;
    }
 
    .con_tourView h4 {
@@ -303,7 +311,7 @@
       font-size:1em;
    }
    .facilList .facilList_thumb {
-      height:24vw;
+      height:30vw;
    }
    .con_tourView .tourDirection #map {
       height: 300px;
