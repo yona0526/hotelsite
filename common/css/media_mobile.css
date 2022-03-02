@@ -83,16 +83,26 @@
    height:130vw;
    object-fit: cover
 }
-.slide_mob {
+/* .slide_mob {
    display: block;
 }
 .slide_web {
    display: none;
-}
-.mainEventWrap {
-   padding:0 7%;
-   margin:0 auto;
-}
+} */
+.indexSlide ul li .indexTxt {
+   position: absolute;
+   top:20px;
+   left:20px;
+ }
+ .indexSlide ul li h3 {
+   color:#fff;
+   font-size:6vw;
+ 
+ }
+ .indexSlide ul li span {
+   color:#fff; 
+   font-size:4vw;
+ }
 .eventLayer {
    width: 74%;
    left:5%;

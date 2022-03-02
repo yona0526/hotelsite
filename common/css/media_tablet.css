@@ -59,8 +59,18 @@
     }
     .mainContent .main_Intro li {
       width:25%;
-      padding:2% 0 3%;
+      padding:2% 2% 3%;
     }
+    .mainContent .main_Intro li img {
+      width:70%;
+    }
+    .mainContent .main_Intro .mIntro_txt {
+      font-size:1.6vw
+    }
+    .mainContent.mainEventWrap {
+      padding:0 7%;
+      margin:0 auto;
+   }
     .eventLayer {
       width:80%;
       left:7.5%;
@@ -84,6 +94,9 @@
     .footContent_left {
       padding:0;
       width:46%
+    }
+    .footContent_left .footLogo {
+      width:94px;
     }
     .footContent_right #footCs span {
       font-size:2.2vw
@@ -266,7 +279,12 @@
   margin-top:1.8vw;
 }
 }
-
+@media only screen and (max-width:860px) {
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 12px !important;
+    height:12px !important;
+  }
+}
 
 @media only screen and (max-width:768px) {
     .tour_Searchbox {
@@ -315,10 +333,8 @@
     .mainContent .main_Intro li {
       width:25%;
     }
-    .mainContent .main_Intro {padding:0}
-    .mainContent .main_Intro .mIntro_txt {
-      font-size:1.6vw
-    }
+    
+
     .mainContent .main_Intro li img {
       width:15.5vw;
     }
