@@ -96,18 +96,28 @@
 
         <div class="indexSlide slide_web">
           <ul>
-            <li><img src="img/main1.jpg" alt="겨울 패키지"/></li>
-            <li><img src="img/zzz1.jpg" alt="스키 스노우보드" /></li>
+            <li>
+              <div class="indexTxt">
+                <h3>메인슬라이드 1 제목 - 좋은 재료는 거짓말을 하지 않는다고</h3><span>사랑하는 가족, 친구, 연인에게 마음을 전달하고 싶을 때, 나를 위한 선물을 주고 싶을 때, 
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="indexTxt">
+                <h3>메인슬라이드2 제목 - 좋은 재료는 거짓말을 하지 않는다고</h3><span>사랑하는 가족, 친구, 연인에게 마음을 전달하고 싶을 때, 나를 위한 선물을 주고 싶을 때, 
+                </span>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="indexSlide slide_mob">
+        <!-- <div class="indexSlide slide_mob">
           <ul>
             <li>
               <img src="img/main_mob1.jpg" alt="겨울 패키지" />
             </li>
-            <li><img src="img/zzz1.jpg" alt="스키 스노우보드" /></li>
+            <li><img src="img/main2.jpg" alt="스키 스노우보드" /></li>
           </ul>
-        </div>
+        </div> -->
 
 
       <div class="mainContent">
@@ -118,49 +128,49 @@
               <a href="list.html">
                   <span class="mIntro_title">여행</span>
                   <img src="img/indexicon/m_travel.png" alt="여행" />
-                  <span class="mIntro_txt">프리미엄 회원만을 위한 <br>고급 숙박 서비스</span>
+                  <span class="mIntro_txt">프리미엄 회원만을 위한 고급 숙박 서비스</span>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);">
                   <span class="mIntro_title">초대</span>
                   <img src="img/indexicon/m_invi.png" alt="초대" />
-                  <span class="mIntro_txt">일상 속에서 리프레시를 위한 <br>다양한 문화경험</span>
+                  <span class="mIntro_txt">일상 속에서 리프레시를 위한 다양한 문화경험</span>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);">
                   <span class="mIntro_title">골프</span>
                   <img src="img/indexicon/m_golf2.png" alt="골프" />
-                  <span class="mIntro_txt">여유와 휴식을 함께 즐기며<br> 자연과 하나가 되는 스포츠</span>
+                  <span class="mIntro_txt">여유와 휴식을 함께 즐기며 자연과 하나가 되는 스포츠</span>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);">
                   <span class="mIntro_title">헬스케어</span>
                   <img src="img/indexicon/m_medi2.png" alt="헬스케어" />
-                  <span class="mIntro_txt">건강검진 &유전자검사<br> 설명뭐저쩌구</span>
+                  <span class="mIntro_txt">건강검진 &유전자검사를 특별한 가격에 제공</span>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);">
                   <span class="mIntro_title">멤버십</span>
                   <img src="img/indexicon/m_member.png" alt="멤버십" />
-                  <span class="mIntro_txt">즐기고 회원님들만을 위한 <br>다양한 서비스</span>
+                  <span class="mIntro_txt">즐기고 회원님들만을 위한 다양한 서비스</span>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);">
                   <span class="mIntro_title">리빙</span>
                   <img src="img/indexicon/m_living.png" alt="리빙" />
-                  <span class="mIntro_txt">국내 생산 천연 라텍스 제품을 <br>특별가에</span>
+                  <span class="mIntro_txt">국내 생산 천연 라텍스 제품을 특별가에</span>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);">
                   <span class="mIntro_title">쇼핑</span>
                   <img src="img/indexicon/m_shopping.png" alt="쇼핑" />
-                  <span class="mIntro_txt">최고의 제품들을 최저가로 <br>만날 수 있는 기회</span>
+                  <span class="mIntro_txt">최고의 제품들을 최저가로 만날 수 있는 기회</span>
               </a>
             </li>
         </ul>
@@ -315,6 +325,16 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  breakpoints: { // 화면의 넓이가 320px 이상일 때 
+  320: { slidesPerView: 1, spaceBetween: 15 
+  }, 
+  640: { slidesPerView: 2.5, spaceBetween: 30
+  }, 
+  // 화면의 넓이가 640px 이상일 때 
+  1024: { slidesPerView: 3, spaceBetween: 30 } }
+
+
 });
 
 
