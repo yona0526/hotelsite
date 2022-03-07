@@ -464,10 +464,10 @@
   font-size:20px;
 }
 .indexSlide ul li:first-child {
-  background-image: url('/tourHTML/img/main1.jpg');
+  background-image: url('/hotelsite/img/main1.jpg');
 }
 .indexSlide ul li:nth-child(2) {
-  background-image: url('/tourHTML/img/zzz1.jpg');
+  background-image: url('/hotelsite/img/zzz1.jpg');
 }
 .mainContent .main_Intro {
   padding: 1% 16%;
@@ -693,12 +693,12 @@
 }
 
 .tour_view .bx-wrapper .bx-controls .bx-prev {
-  background: url('/tourHTML/img/arrow_fff.png') no-repeat 4%;
+  background: url('/hotelsite/img/arrow_fff.png') no-repeat 4%;
   left: 10px;
 }
 
 .tour_view .bx-wrapper .bx-controls .bx-next {
-  background: url('/tourHTML/img/arrow_fff.png') no-repeat 95%;
+  background: url('/hotelsite/img/arrow_fff.png') no-repeat 95%;
   right: 10px;
 }
 
@@ -850,12 +850,12 @@
 }
 
 .rmlist_wrap .swiper-button-prev {
-  background: url("http://img.gmidas.com/julgigobaseimg/vip/premium/cal-arrow.png") no-repeat 20%;
+  background: url("/hotelsite/img/cal-arrow.png") no-repeat 20%;
   left: 0
 }
 
 .rmlist_wrap .swiper-button-next {
-  background: url("http://img.gmidas.com/julgigobaseimg/vip/premium/cal-arrow.png") no-repeat 83%;
+  background: url("/hotelsite/img/cal-arrow.png") no-repeat 83%;
   right: 0
 }
 
@@ -1034,7 +1034,7 @@
   font-size: 1.25em;
   vertical-align: baseline;
   padding: 0px;
-  background: #fff url('/tourHTML/img/arrow_down.png') no-repeat 99% 50%;
+  background: #fff url('/hotelsite/img/arrow_down.png') no-repeat 99% 50%;
   background-size: 4%;
 }
 

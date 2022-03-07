@@ -271,7 +271,7 @@
    .room_layer {
       top:300px;
       padding:45px 0 0;
-      height:800px;
+      height:720px;
    }
    .room_layer .roomSlide {
       height:100vw;
@@ -329,6 +329,12 @@
    .con_tourView .tourDirection .mapOverlay {
       width:50%;
       height:35%;
+   }
+   .con_tourView .tourDirection .mapOverlay #mapName {
+      font-size:3.3vw;
+   }
+   .tourDirection .mapOverlay #mapPhone, .tourDirection .mapOverlay #mapAddr {
+      font-size:2.3vw;margin-bottom:0
    }
    .sightList li {
       width:47%;
