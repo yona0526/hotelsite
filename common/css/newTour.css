@@ -464,7 +464,7 @@
   color:#fff; 
   font-size:20px;
 }
-.indexSlide .bx-viewport {
+.indexSlide .bx-wrapper .bx-viewport {
   border:0;
 }
 .indexSlide ul li:first-child {
