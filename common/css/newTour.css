@@ -9,7 +9,7 @@
   width: 70px;
   display: inline-block;
   margin-left: 2%;
-  margin-top: -9px;
+  /* margin-top: -9px; */
   cursor: pointer
 }
 
@@ -24,7 +24,8 @@
 
 .header #lnb {
   float: right;
-  line-height: 73px
+  line-height: 73px;
+  margin-top:5px;
 }
 
 .header #lnb li {
@@ -61,7 +62,7 @@
 .header .gnb_top {
   background:#333;
   /* height:5.3vw; */
-  padding:1.2vw;
+  padding:1.4vw;
   box-sizing:border-box;
   text-align: right;
 }
@@ -71,7 +72,7 @@
 }
 .header .gnb_top #btn-gnb_close i {
   color:#eee;
-  font-size:37px;
+  font-size:40px;
 }
 
 .header #gnb .menu {
@@ -438,7 +439,7 @@
 }
 
  .indexSlide {
-  padding:0 3.2%;
+  /* padding:0 3.2%; */
   z-index: 1;
   max-height:750px;
 }
@@ -463,8 +464,11 @@
   color:#fff; 
   font-size:20px;
 }
+.indexSlide .bx-viewport {
+  border:0;
+}
 .indexSlide ul li:first-child {
-  background-image: url('/hotelsite/img/main1.jpg');
+  background-image: url("/hotelsite/img/main1.jpg");
 }
 .indexSlide ul li:nth-child(2) {
   background-image: url('/hotelsite/img/zzz1.jpg');
@@ -506,6 +510,7 @@
   line-height: 1.2em;
   max-height: 50px;
   overflow: hidden;
+  padding:0 33px;
 }
 .mainContent.mainEventWrap {
   padding:0 11.5vw;
