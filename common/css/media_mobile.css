@@ -67,6 +67,7 @@
   }
 .mainContent .main_Intro li {
    width:33%;
+   padding:3% 0;
 }
 .mainContent .main_Intro li .mIntro_title {
    font-size:5vw
@@ -416,6 +417,13 @@
    .completeDetail dd {
       width:100%;
       padding-left:15px;
+   }
+   .complete_btn {margin:45px 0 45px}
+   .complete_btn button {
+      width:46%;
+   }
+   .complete_btn button:first-child {
+      margin-right:1%
    }
 }
 

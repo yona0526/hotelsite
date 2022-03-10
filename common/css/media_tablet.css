@@ -4,7 +4,7 @@
 @media only screen and (max-width:1024px){
     
     .header {
-        padding: 1.8vw 2.4vw
+        padding: 1.5vw 2.4vw
     }
     .header #gnb {
         width:30%;
@@ -65,7 +65,8 @@
       width:70%;
     }
     .mainContent .main_Intro .mIntro_txt {
-      font-size:1.6vw
+      font-size:1.6vw;
+      padding:0
     }
     .mainContent.mainEventWrap {
       padding:0 7%;
@@ -328,7 +329,7 @@
     }
       /* index */
     .mainContent .main_Intro {
-        padding:0 10%:
+        padding:3% 10%;
       }
     .mainContent .main_Intro li {
       width:25%;
