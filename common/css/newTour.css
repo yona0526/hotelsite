@@ -1,7 +1,7 @@
 .header {
   background: #333;
   color: white;
-  padding: 1.2vw 11.5vw;
+  padding: 15px 3%;
   box-sizing: border-box;
 }
 
@@ -62,17 +62,18 @@
 .header .gnb_top {
   background:#333;
   /* height:5.3vw; */
-  padding:1.4vw;
+  padding:15px;
   box-sizing:border-box;
   text-align: right;
 }
 .header .gnb_top #btn-gnb_close {
   background:#333;
-  display:inline-block
+  display:inline-block;
+  height:46px
 }
 .header .gnb_top #btn-gnb_close i {
   color:#eee;
-  font-size:40px;
+  font-size:34px;
 }
 
 .header #gnb .menu {
@@ -311,7 +312,7 @@
 }
 
 .content {
-  padding: 3.2%;
+  padding: 1% 3%;
 }
 
 .content_txt {
@@ -654,6 +655,9 @@
 }
 
 /* 숙박 뷰 페이지 */
+.viewContent {
+
+}
 .tour_view {
   min-width: 1200px
 }
