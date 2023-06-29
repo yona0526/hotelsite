@@ -153,12 +153,12 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav .flex-prev {
   left: 70px;
-  background:url("http://img.gmidas.com/julgigobaseimg/vip/premium/cal-arrow.png") no-repeat 10%;
+  background:url("/hotelsite/img/cal-arrow.png") no-repeat 10%;
    
 }
 .flex-direction-nav .flex-next {
   right: 326px;
-   background:url("http://img.gmidas.com/julgigobaseimg/vip/premium/cal-arrow.png") no-repeat 90%;
+   background:url("/hotelsite/img/cal-arrow.png") no-repeat 90%;
    
   text-align: right;
 }
